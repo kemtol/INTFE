@@ -1,0 +1,242 @@
+/* kana's override css -- START */
+
+/* GENERAL -- START */
+
+/* GENERAL -- END */
+
+/* Header Top Light -- START */
+.header-top-light {
+    background: #f1f1f1;
+    box-shadow: 0px 1px 0px #E4E4E4;
+}
+
+.header-top-light .nav-link {
+    font-size: 12px;
+    line-height: 15px;
+    color: #858585;
+}
+/* Header Top Light -- END */
+
+/* Header Main -- START */
+.header-main {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-main .navbar-main .nav-link {
+    font-size: 13px;
+    color: #2b2b2b;
+}
+
+@media only screen and (min-width: 720px) {
+    .header-main .navbar-main .nav-item .dropdown-menu {
+        top: 130%;
+        background: #fff;
+        border-radius: 0;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .header-main .navbar-main .nav-item .dropdown-menu .row {
+        width: 1200px;
+    }
+
+    .header-main .navbar-main .nav-item .dropdown-menu .row ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .header-main .navbar-main .nav-item .dropdown-menu .dropdown-item {
+        color: #2b2b2b;
+        font-size: 12px;
+    }
+
+    .header-main .navbar-main .nav-item .dropdown-menu .dropdown-item.title {
+        font-weight: 600;
+    }
+}
+
+.header-main .search i {
+    position: absolute;
+}
+
+.header-main .search .icon {
+    padding: 10px;
+    min-width: 50px;
+    z-index: 9;
+    color: #adadad;
+}
+
+.header-main .search input {
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    border-radius: 100px !important;
+    font-size: 13px;
+    padding-left: 30px;
+}
+
+.header-main .search input::placeholder {
+    color: #a0a0a0;
+}
+/* Header Main -- END */
+
+/* Product Category -- START */
+
+.product-category .scrolling-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.product-category .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.product-category .card-product-grid.card {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.product-category .card-product-grid.card:hover {
+    transition: 0;
+    box-shadow: initial;
+}
+
+.product-category .card-product-grid .img-wrap {
+    height: initial;
+    position: relative;
+}
+
+.product-category .card-product-grid .img-wrap img {
+    /* width: 100%; */
+}
+
+.product-category .card-product-grid .img-wrap h3 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2b2b2b;
+}
+
+/* Product Category -- END */
+
+/* Product List -- START */
+
+.product-list h2 {
+    font-size: 24px;
+    color: #2b2b2b;
+    font-weight: 300;
+}
+
+/* Product List -- END */
+
+/* Pagination -- START */
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    color: #adadad;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    border: none;
+    margin: 0 10px;
+}
+
+.pagination .page-item .page-link:hover {
+    background: none;
+}
+
+.pagination .page-item.active .page-link {
+    background: #2b2b2b;
+    border-radius: 80px;
+    color: white;
+}
+
+.pagination .page-item.page-prev-next {
+    position: absolute;
+}
+
+.pagination .page-item.page-prev-next.prev {
+    left: 0;
+}
+
+.pagination .page-item.page-prev-next.next {
+    right: 0;
+}
+
+.pagination .page-item.page-prev-next.disabled .page-link {
+    border: 2px solid #adadad;
+    color: #adadad;
+}
+
+.pagination .page-item.page-prev-next .page-link {
+    background: #FFFFFF;
+    border: 2px solid #2B2B2B;
+    color: #2b2b2b;
+    box-sizing: border-box;
+    border-radius: 80px;
+}
+
+/* Pagination -- END */
+
+/* Footer -- START */
+.footer-seo {
+    background: white;
+}
+
+.footer-seo article {
+    font-size: 14px;
+    color: #adadad;
+    line-height: 20px;
+}
+
+.footer-seo article h3 {
+    color: #2b2b2b;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.section-footer {
+    background: #f1f1f1;
+    font-size: 12px;
+    color: #474747;
+}
+
+.section-footer .title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-footer li {
+    line-height: 24px;
+}
+
+.section-footer .newsletter input {
+    background: transparent;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 719px) {
+    .section-footer .newsletter input {
+        width: 85%;
+    }
+}
+
+.section-footer .footer-bottom a {
+    color: #474747;
+}
+
+/* Footer -- END */
+
+/* kana's override css -- END */
