@@ -472,6 +472,85 @@ $(document).ready(function() {
 			</div> <!-- card-body.// -->
 		</div>
 	</article> <!-- filter-group  .// -->
+	<article class="filter-group colors">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Colors </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse_4">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/white.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/grey.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap active">
+							<img src="images/colors/dark-grey.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/yellow.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/orange.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/dark-orange.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/krem.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/pink.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/purple.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/lemon.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/brown.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/navy-green.png">
+						</div>
+					</div>
+					<div class="col-2 mb-2">
+						<div class="color-wrap">
+							<img src="images/colors/black.png">
+						</div>
+					</div>
+				</div>
+			</div><!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group .// -->
 	<article class="filter-group pricing">
 		<header class="card-header">
 			<a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
@@ -506,18 +585,16 @@ $(document).ready(function() {
 <header class="mb-4 pb-3">
 		<div class="form-inline">
 			<h2 class="mr-md-auto">Products List</h2>
-			<select class="mr-2 form-control">
-				<option>Latest items</option>
-				<option>Trending</option>
-				<option>Most Popular</option>
-				<option>Cheapest</option>
+			<select class="mr-3 form-control sort-products d-none d-md-inline-block">
+				<option>A To Z</option>
+				<option>Z To A</option>
+				<option>Recent</option>
+				
 			</select>
-			<div class="btn-group">
-				<a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" title="List view"> 
-					<i class="fa fa-bars"></i></a>
-				<a href="#" class="btn  btn-outline-secondary active" data-toggle="tooltip" title="Grid view"> 
-					<i class="fa fa-th"></i></a>
-			</div>
+			<select class="form-control sort-products d-none d-md-inline-block">
+				<option>Harga Terendah</option>
+				<option>Harga Tertinggi</option>
+			</select>
 		</div>
 </header><!-- sect-heading -->
 
@@ -534,9 +611,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -561,9 +638,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -594,9 +671,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -618,9 +695,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -642,9 +719,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -669,9 +746,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -702,9 +779,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
@@ -726,9 +803,9 @@ $(document).ready(function() {
 			</div>
 			<div class="color-option pt-3 pb-1">
 				<ul>
-					<li><div class="colors brown"></div></li>
-					<li class="active"><div class="colors grey"></div></li>
-					<li><div class="colors krem"></div></li>
+					<li><img src="images/colors/brown.png" /></li>
+					<li class="active"><img src="images/colors/grey.png" /></li>
+					<li><img src="images/colors/green.png" /></li>
 				</ul>
 			</div>
 			<figcaption class="info-wrap px-0 pt-0">
