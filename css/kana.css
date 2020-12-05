@@ -352,6 +352,34 @@
     border: 1px solid #2b2b2b;
 }
 
+.product-list .filter-list .list-category {
+    list-style: none;
+}
+
+.product-list .filter-list .list-category li a {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 300;
+}
+
+.product-list .filter-list .list-category li.selected a, .product-list .filter-list .list-category li:hover a {
+    font-weight: 600;
+}
+
+.product-list .filter-list .list-subcategory {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.product-list .filter-list .list-subcategory li a {
+    font-size: 12px;
+    font-weight: 300 !important;
+}
+
+.product-list .filter-list .list-subcategory li.selected a {
+    font-weight: 600 !important;
+}
+
 /* Product List -- END */
 
 /* Product DETAIL -- START */
