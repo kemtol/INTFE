@@ -275,13 +275,13 @@
     width: 100%;
 }
 
-.product-list .card-product-grid .bottom-wrap .btn, .btn-add-to-cart, .product-card .bottom-wrap .btn {
+.product-list .card-product-grid .bottom-wrap .btn, .btn-outline-kana, .product-card .bottom-wrap .btn {
     border-radius: 50px;
     font-size: 12px;
     text-transform: uppercase;
 }
 
-.product-list .card-product-grid .bottom-wrap .btn img, .btn-add-to-cart img, .product-card .bottom-wrap .btn img {
+.product-list .card-product-grid .bottom-wrap .btn img, .btn-outline-kana img, .product-card .bottom-wrap .btn img {
     vertical-align: sub;
     margin-left: 5px;
 }
@@ -545,6 +545,50 @@
 }
 
 /* Other Products -- END */
+
+/* Add To Cart Modal -- START */
+
+#addToCart .modal-content {
+    border-radius: 0;
+}
+
+#addToCart .modal-header {
+    background: #2b2b2b;
+    text-align: center;
+    color: white;
+    border-radius: 0;
+}
+
+#addToCart .modal-header h5 {
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+}
+
+#addToCart .modal-header .close {
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+#addToCart .modal-body h3 {
+    font-size: 20px;
+}
+
+#addToCart .modal-body h6, #addToCart .modal-body .text-warning {
+    font-size: 12px;
+}
+
+#addToCart .modal-body .price {
+    font-size: 14px;
+}
+
+#addToCart .modal-body .text-muted {
+    font-size: 12px;
+}
+
+/* Add To Cart Modal -- END */
 
 /* Pagination -- START */
 

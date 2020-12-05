@@ -438,7 +438,142 @@ $(document).ready(function() {
 						</div>
 
 						<div class="mb-4">
-							<a href="#" class="btn btn-block btn-dark btn-add-to-cart">Add to cart <img src="images/shopping-cart-white.png" /></a>	
+							<a href="#" class="btn btn-block btn-dark btn-outline-kana" data-toggle="modal" data-target="#addToCart">Add to cart <img src="images/shopping-cart-white.png" /></a>	
+							<!-- Modal -->
+							<div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle"><img src="images/check-circle.png" /> Product is successfully added to cart</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="container">
+												<div class="row border-bottom mb-3">
+													<div class="col-5 col-md-3">
+														<img class="w-100" src="images/product-detail.png" />
+													</div>
+													<div class="col-7 col-md-5">
+														<h3 class="title">Arato Japanese Style</h3>
+														<p class="product-category">Bookcases & Display Cases</p>
+
+														<div class="mb-2">
+															<h6>Delivery Estimation</h6>
+															<p class="text-warning">5 Days Estimation</p>
+														</div>
+
+														<div class="my-2">
+															<span class=text-muted>2 items x </span><var class="price h4">Rp. 600,000</var> <br>
+														</div> <!-- price-detail-wrap .// -->
+													</div>
+													<div class="col-12 col-md-4">
+														<a href="#" class="btn btn-block btn-outline-dark btn-outline mt-3">Continue Shopping</a>
+														<a href="#" class="btn btn-block btn-dark btn-outline-kana">View Shopping Cart <i class="fa fa-angle-right"></i></a>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-12 grid-product mt-3">
+														<h2>People who bought this item also bought</h2>
+														<!-- ========================= SECTION CATEGORY ========================= -->
+														<section class="section-content pt-4 pb-2 product-category">
+															<div class="container">
+																<div class="container-fluid pb-4">
+																	<div class="row scrolling-wrapper">
+																		<div class="col">
+																			<figure class="card card-product-grid product-card">
+																				<div class="img-wrap">
+																					<img src="images/product-1.png">
+																					<span class="topbar wishlist">
+																						<a href="#" class="float-right wishlist-container">
+																							<i class="fa fa-heart"></i>
+																						</a>
+																					</span>
+																				</div>
+																				<div class="color-option pt-3 pb-1">
+																					<ul>
+																						<li><img src="images/colors/brown.png" /></li>
+																						<li class="active"><img src="images/colors/grey.png" /></li>
+																						<li><img src="images/colors/green.png" /></li>
+																					</ul>
+																				</div>
+																				<figcaption class="info-wrap px-0 pt-0">
+																					<a href="#" class="title">Arato Japanese Style</a>
+																					<p class="desc">
+																						Mengambil nama dari bahasa Jepang (アラト) yang berarti “waspada” menjadikaa penyimpanan terbaik.
+																					</p>
+																					<p>Rp. 1,599,000</p>
+																				</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col">
+																			<figure class="card card-product-grid product-card">
+																				<div class="img-wrap">
+																					<img src="images/product-2.png">
+																					<span class="topbar wishlist">
+																						<a href="#" class="float-right wishlist-container">
+																							<i class="fa fa-heart"></i>
+																						</a>
+																					</span>
+																				</div>
+																				<div class="color-option pt-3 pb-1">
+																					<ul>
+																						<li><img src="images/colors/brown.png" /></li>
+																						<li class="active"><img src="images/colors/grey.png" /></li>
+																						<li><img src="images/colors/green.png" /></li>
+																					</ul>
+																				</div>
+																				<figcaption class="info-wrap px-0 pt-0">
+																					<a href="#" class="title">2020 Skandinavian Style</a>
+																					<p class="desc">
+																						Bangku sekaligus penyimpanan yang dilengkapi dengan UV-C box timer otomatis.
+																					</p>
+																					<p>Rp. 1,599,000</p>
+																				</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col">
+																			<figure class="card card-product-grid product-card">
+																				<div class="img-wrap">
+																					<img src="images/product-4.png">
+																					<span class="topbar wishlist">
+																						<a href="#" class="float-right wishlist-container">
+																							<i class="fa fa-heart"></i>
+																						</a>
+																					</span>
+																				</div>
+																				<div class="color-option pt-3 pb-1">
+																					<ul>
+																						<li><img src="images/colors/brown.png" /></li>
+																						<li class="active"><img src="images/colors/grey.png" /></li>
+																						<li><img src="images/colors/green.png" /></li>
+																					</ul>
+																				</div>
+																				<figcaption class="info-wrap px-0 pt-0">
+																					<a href="#" class="title">Massi – Edisi Meja Belajar</a>
+																					<p class="desc">
+																						Meja Belajar untuk permainan sensorial agar anak lebih tertib dan teratur, serta melatih fokus dan konsentrasi.
+																					</p>
+																					<p>Rp. 1,599,000</p>
+																				</figcaption>
+																			</figure>
+																		</div>
+																	</div>
+																
+																</div> <!-- container .//  -->
+															</div>
+															
+														</section>
+														<!-- ========================= SECTION CATEGORY END// ========================= -->
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<a href="#" class="btn btn-block btn-outline-dark btn-outline mt-3">Add to wishlist</a>	
 						</div>
 						
