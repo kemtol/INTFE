@@ -308,7 +308,7 @@ $(document).ready(function() {
 							<div class="dropdown-divider d-md-none"></div>
 							<ul class="navbar-nav mr-auto d-md-none">
 								<li class="nav-item dropdown mr-2 position-static">
-									<a class="nav-link" href="http://example.com" >Login</a>
+									<a class="nav-link" href="http://example.com" data-toggle="modal" data-target="#loginRegisterModal">Login</a>
 								</li>
 								<li class="nav-item dropdown mr-2 position-static">
 									<a class="nav-link" href="http://example.com" >Register</a>
@@ -350,7 +350,7 @@ $(document).ready(function() {
 			<div class="col-lg-2 col-xl-2 col-sm-8 col-md-4 col-4">
 				<div class="d-flex justify-content-end">
 					<div class="widget-header mr-4 d-none d-md-block">
-						<a href="#">
+						<a href="#" data-toggle="modal" data-target="#loginRegisterModal">
 							<img src="images/user.png" />
 							<span class="sr-only">Profile actions</span>
 						</a>
@@ -370,6 +370,51 @@ $(document).ready(function() {
 </section> <!-- header-main .// -->
 </header> <!-- section-header.// -->
 
+<!-- Modal -->
+<div class="modal fade" id="loginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="loginRegisterModal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row container">
+					<div class="col-5 d-none d-md-block" style="background-image: url('images/main-banner.png');background-position: center;">
+					</div>
+					<div class="col-12 col-md-7 p-4">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4>Hello, good to see you again</h4>
+						<p>Please login to your account.</p>
+
+						<form class="kana-form">
+							<div class="form-group">
+							   <label>Email</label>
+							   <input name="" class="form-control" placeholder="ex. name@gmail.com" type="email">
+							</div> <!-- form-group// -->
+							<div class="form-group">
+							  <label>Password</label>
+							  <input class="form-control" placeholder="******" type="password">
+							  <a class="float-right forgot mt-2" href="#">Forgot Password?</a>
+							</div> <!-- form-group// --> 
+							<div class="form-group">
+								<button type="submit" class="btn btn-block btn-dark btn-outline-kana"> Log in  </button>
+							</div> <!-- form-group// -->  
+							<div class="text-separator text-center">OR CONTINUE USING</div>
+							<div class="row my-3">
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/google.png" /> Google</button>
+								</div>
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/facebook.png" /> Facebook</button>
+								</div>
+							</div>
+							<p>Still don’t have an account? <a href="#">Register</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- ========================= SECTION INTRO ========================= -->
 <div id="mainCarousel" class="carousel slide" data-ride="carousel">
