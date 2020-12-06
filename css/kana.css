@@ -2,6 +2,22 @@
 
 /* GENERAL -- START */
 
+.btn-fill-light {
+    background: white;
+    border-radius: 100px;
+    padding: 10px 25px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.btn-outline-kana {
+    background: #2b2b2b;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
 /* GENERAL -- END */
 
 /* Header Top Light -- START */
@@ -124,6 +140,135 @@
     color: #a0a0a0;
 }
 /* Header Main -- END */
+
+/* Home - START */
+
+#mainCarousel .carousel-caption {
+    left: 10%;
+    top: 20%;
+}
+
+#mainCarousel .carousel-caption h2 {
+    color: white;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.benefit-banner p {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.home-kana h3.section-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    color: #2b2b2b;
+}
+
+.home-kana .card-highlight {
+    border-radius: 0;
+    border: none;
+}
+
+.home-kana .card-highlight .card-img {
+    border-radius: 0;
+}
+
+.home-kana .card-highlight .card-img-overlay {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.home-kana .card-highlight .card-img-overlay h5.card-title {
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0 45px;
+}
+
+.home-kana .card-highlight .card-img-overlay .btn {
+    font-size: 12px;
+}
+
+.home-kana .card-highlight.overlay-gradient:before {
+    background: #2b2b2b;
+    transition: none;
+}
+
+.home-kana .card-highlight.overlay-gradient:hover:before {
+    opacity: 0.6;
+}
+
+.home-kana .bottom-right-wrapper {
+    background: #2b2b2b;
+    position: relative;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 30px;
+    width: 75%;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content h4 {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content ul li {
+    font-size: 12px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.home-kana .bottom-right-wrapper .bottom-right-content ul li a {
+    color: white;
+}
+
+@media only screen and (max-width: 719px) {
+    .home-kana .bottom-right-wrapper .bottom-right-content {
+        position: relative;
+        width: 90%;
+    }
+
+    .home-kana .bottom-right-wrapper .bottom-right-content h4 {
+        width: 80%;
+    }
+
+    .home-kana .bottom-banner h5 {
+        padding: 0;
+    }
+
+    .home-kana .bottom-banner p {
+        width: 100% !important;
+    }
+
+    .home-kana .card-highlight .card-img-overlay {
+        top: 40%;
+    }
+}
+
+/* Home - END */
 
 /* Product Category -- START */
 
