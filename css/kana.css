@@ -853,6 +853,119 @@
 
 /* Login Register Modal -- END */
 
+/* Shopping Cart -- START */
+
+.shopping-cart .title-page {
+    font-size: 24px;
+    font-weight: 300;
+    color: #2b2b2b;
+}
+
+.shopping-cart-list .cart-item {
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+    padding: 30px 0;
+}
+
+.shopping-cart-list .cart-item:last-child {
+    border-bottom: none;
+}
+
+.shopping-cart-list .cart-item h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2b2b2b;
+}
+
+.shopping-cart-list .cart-item .category {
+    font-size: 13px;
+    font-weight: normal;
+    color: #6a6a6a;
+    line-height: 25px;
+}
+
+.shopping-cart-list .cart-item p {
+    font-size: 12px;
+    color: #2b2b2b;
+    line-height: 10px;
+}
+
+.shopping-cart-list .cart-item p span {
+    display: block;
+    margin-top: 14px;
+}
+
+.shopping-cart-list .cart-item .price {
+    font-weight: normal;
+    font-size: 16px;
+    color: #2b2b2b;
+    letter-spacing: -.01em;
+}
+
+.shopping-cart-list .cart-item .delete-cart {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.shopping-cart-list .cart-item .input-spinner {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: fit-content;
+    padding-right: 15px;
+}
+
+.shopping-cart-list .cart-item .input-spinner button {
+    background: #FFFFFF;
+    border: 1.5px solid #2B2B2B;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+}
+
+.shopping-cart-list .cart-item .input-spinner button.disabled {
+    background: #f1f1f1;
+    border: none;
+}
+
+.shopping-cart-list .cart-item .input-spinner button i {
+    color: #2b2b2b;
+    font-size: 12px;
+}
+
+.shopping-cart-list .cart-item .input-spinner input {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+}
+
+@media only screen and (max-width: 719px) {
+    .shopping-cart-list .cart-item {
+        padding-bottom: 50px;
+    }
+
+    .shopping-cart-list .cart-item p span {
+        display: inline-block;
+        margin: 0px 0 15px;
+    }
+
+    .shopping-cart-list .cart-item .delete-cart {
+        bottom: 0;
+        right: 0;
+        top: inherit;
+    }
+
+    .shopping-cart-list .cart-item .input-spinner {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Shopping Cart -- END */
+
 /* Footer -- START */
 .footer-seo {
     background: white;

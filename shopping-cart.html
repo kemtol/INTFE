@@ -6,7 +6,7 @@
 <meta http-equiv="cache-control" content="max-age=604800" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Website title - bootstrap html template</title>
+<title>Kana</title>
 
 <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -20,12 +20,20 @@
 <!-- Font awesome 5 -->
 <link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
 
+<!-- plugin: fancybox  -->
+<script src="plugins/fancybox/fancybox.min.js" type="text/javascript"></script>
+<link href="plugins/fancybox/fancybox.min.css" type="text/css" rel="stylesheet">
+
 <!-- custom style -->
 <link href="css/ui.css" rel="stylesheet" type="text/css"/>
 <link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
+<!-- override style -->
+<link href="css/kana.css" rel="stylesheet" type="text/css"/>
+
 <!-- custom javascript -->
 <script src="js/script.js" type="text/javascript"></script>
+<script src="js/kana.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 /// some script
@@ -39,183 +47,540 @@ $(document).ready(function() {
 </script>
 
 </head>
-<body>
-
+<body class="shopping-cart">
 
 <header class="section-header">
-<section class="header-main border-bottom">
-	<div class="container">
-<div class="row align-items-center">
-	<div class="col-lg-2 col-4">
-		<a href="http://bootstrap-ecommerce.com" class="brand-wrap">
-			<img class="logo" src="images/logo.jpg"> INTEGRIYA
-		</a> <!-- brand-wrap.// -->
-	</div>
-	<div class="col-lg-6 col-sm-12">
-		<form action="#" class="search">
-			<div class="input-group w-100">
-			    <input type="text" class="form-control" placeholder="Search">
-			    <div class="input-group-append">
-			      <button class="btn btn-primary" type="submit">
-			        <i class="fa fa-search"></i> Search
-			      </button>
-			    </div>
-		    </div>
-		</form> <!-- search-wrap .end// -->
-	</div> <!-- col.// -->
-	<div class="col-lg-4 col-sm-6 col-12">
-		<div class="widgets-wrap float-md-right">
-			<div class="widget-header  mr-3">
-				<a href="#" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
-				<span class="badge badge-pill badge-danger notify">0</span>
-			</div>
-			<div class="widget-header icontext">
-				<a href="#" class="icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
-				<div class="text">
-					<span class="text-muted">Welcome!</span>
-					<div> 
-						<a href="#">Sign in</a> |  
-						<a href="#"> Register</a>
-					</div>
-				</div>
-			</div>
 
-		</div> <!-- widgets-wrap.// -->
-	</div> <!-- col.// -->
-</div> <!-- row.// -->
+<section class="header-top-light">
+	<div class="container">
+		<nav class="d-flex flex-column flex-md-row">
+			<ul class="nav mr-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link pl-0">Lokasi Saya di <i class="fa fa-map-marker-alt"></i> <b>Jakarta Barat</b></a>
+				</li>
+			</ul>
+			<ul class="nav d-none d-md-flex">
+				<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">   Language </a>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a class="dropdown-item" href="#">English</a></li>
+						<li><a class="dropdown-item" href="#">Arabic</a></li>
+						<li><a class="dropdown-item" href="#">Russian </a></li>
+					</ul>
+				</li>
+			</ul> <!-- navbar-nav.// -->
+		</nav>
+	</div>
+</section>
+
+<section class="header-main">
+	<div class="container">
+		<div class="row align-items-center position-relative">
+			<div class="col-lg-5 col-sm-4 col-md-4 col-4 pl-md-0 position-static">
+				<nav class="navbar navbar-expand-md navbar-main px-0 position-static">
+					<div class="container pl-0">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown6" onclick="bodyCssChange()">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="dropdown6">
+							<form action="#" class="search d-md-none">
+								<div class="input-group w-100">
+									<i class="fas fa-search icon"></i>
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+							</form> <!-- search-wrap .end// -->
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown"> Furniture</a>
+									<div class="dropdown-menu">
+										<div class="row p-2 w-100">
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown"> Decor & Homemaking</a>
+									<div class="dropdown-menu">
+										<div class="row p-2">
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown"> Services</a>
+									<div class="dropdown-menu">
+										<div class="row p-2">
+											<div class="col-12 col-md-3 border-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-3 border-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Foods and Drink</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+													<li><a class="dropdown-item" href="page-category.html">Home interior</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item"> <a class="nav-link" href="page-blog.html">Sale</a>  </li>
+							</ul>
+							<div class="dropdown-divider d-md-none"></div>
+							<ul class="navbar-nav mr-auto d-md-none">
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link" href="http://example.com" data-toggle="modal" data-target="#loginModal">Login</a>
+								</li>
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link" href="http://example.com" >Register</a>
+								</li>
+							</ul>
+							<div class="dropdown-divider d-md-none"></div>
+							<ul class="navbar-nav mr-auto d-md-none">
+								<li class="nav-item dropdown mr-2 position-static">
+									<a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown"> Bahasa Indonesia</a>
+									<div class="dropdown-menu">
+										<div class="row p-2 w-100">
+											<div class="col-12 col-md-3 border-md-right">
+												<ul class="mr-auto mb-1 mb-md-3">
+													<li><a class="dropdown-item title" href="page-category.html">Indonesia</a></li>
+													<li><a class="dropdown-item title" href="page-category.html">Inggris</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div> <!-- collapse .// -->
+					</div> <!-- container .// -->
+				</nav>
+			</div>
+			<div class="col-lg-2 col-sm-4 col-md-4 col-4 order-md-first">
+				<a href="http://bootstrap-ecommerce.com" class="brand-wrap mb-0">
+					<img class="logo" src="images/kana_logo.png">
+				</a> <!-- brand-wrap.// -->
+			</div>
+			<div class="col-lg-3 col-xl-3 col-sm-8 col-md-4 d-none d-md-block">
+				<form action="#" class="search">
+					<div class="input-group w-100">
+						<i class="fas fa-search icon"></i>
+						<input type="text" class="form-control" style="width:55%;" placeholder="Search">
+					</div>
+				</form> <!-- search-wrap .end// -->
+			</div> <!-- col.// -->
+			<div class="col-lg-2 col-xl-2 col-sm-8 col-md-4 col-4">
+				<div class="d-flex justify-content-end">
+					<div class="widget-header mr-4 d-none d-md-block">
+						<a href="#" data-toggle="modal" data-target="#loginModal">
+							<img src="images/user.png" />
+							<span class="sr-only">Profile actions</span>
+						</a>
+					</div>  <!-- widget-header .// -->
+
+					<a href="#" class="widget-header mr-3">
+						<div class="icon">
+							<img src="images/shopping-cart.png" />
+							<!-- <span class="notify">0</span> -->
+						</div>
+					</a>
+				
+				</div> <!-- widgets-wrap.// -->
+			</div> <!-- col.// -->
+		</div> <!-- row.// -->
 	</div> <!-- container.// -->
 </section> <!-- header-main .// -->
 </header> <!-- section-header.// -->
 
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row container">
+					<div class="col-5 d-none d-md-block" style="background-image: url('images/main-banner.png');background-position: center;background-repeat:no-repeat;background-size:cover;">
+					</div>
+					<div class="col-12 col-md-7 p-4">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4>Hello, good to see you again</h4>
+						<p>Please login to your account.</p>
+
+						<form class="kana-form">
+							<div class="form-group">
+							   <label>Email</label>
+							   <input name="" class="form-control" placeholder="ex. name@gmail.com" type="email">
+							</div> <!-- form-group// -->
+							<div class="form-group">
+							  <label>Password</label>
+							  <input class="form-control" placeholder="******" type="password">
+							  <a class="float-right forgot mt-2" href="#">Forgot Password?</a>
+							</div> <!-- form-group// --> 
+							<div class="form-group">
+								<button type="submit" class="btn btn-block btn-dark btn-outline-kana"> Log in  </button>
+							</div> <!-- form-group// -->  
+							<div class="text-separator text-center">OR CONTINUE USING</div>
+							<div class="row my-3">
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/google.png" /> Google</button>
+								</div>
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/facebook.png" /> Facebook</button>
+								</div>
+							</div>
+							<p>Still don’t have an account? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row container">
+					<div class="col-5 d-none d-md-block" style="background-image: url('images/main-banner.png');background-position: center;background-repeat:no-repeat;background-size:cover;">
+					</div>
+					<div class="col-12 col-md-7 p-4">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4>Hello, welcome to KANA</h4>
+						<p>Please fill the form below.</p>
+
+						<form class="kana-form">
+							<div class="form-group">
+								<label>Nama Lengkap</label>
+								<input name="" class="form-control" placeholder="ex. Mike" type="text">
+							 </div> <!-- form-group// -->
+							<div class="form-group">
+							   <label>Alamat Email</label>
+							   <input name="" class="form-control" placeholder="ex. name@gmail.com" type="email">
+							</div> <!-- form-group// -->
+							<div class="form-group">
+								<label>Nomor Telepon</label>
+								<input name="" class="form-control" placeholder="ex. 08123456" type="text">
+							 </div> <!-- form-group// -->
+							<div class="form-group">
+							  <label>Password</label>
+							  <input class="form-control" placeholder="******" type="password">
+							</div> <!-- form-group// --> 
+							<div class="form-group">
+								<label>Konfirmasi Password</label>
+								<input class="form-control" placeholder="******" type="password">
+							  </div> <!-- form-group// --> 
+							<div class="form-group">
+								<button type="submit" class="btn btn-block btn-dark btn-outline-kana"> Register  </button>
+							</div> <!-- form-group// -->  
+							<div class="text-separator text-center">OR CONTINUE USING</div>
+							<div class="row my-3">
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/google.png" /> Google</button>
+								</div>
+								<div class="col-6">
+									<button class="btn btn-block btn-outline-dark btn-outline socmed"><img src="images/misc/facebook.png" /> Facebook</button>
+								</div>
+							</div>
+							<p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" >Sign in</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 <!-- ========================= SECTION PAGETOP ========================= -->
-<section class="section-pagetop bg">
+<section class="section-pagetop">
 <div class="container">
-	<h2 class="title-page">Shopping cart</h2>
+	<h2 class="title-page">My Shopping Cart</h2>
 </div> <!-- container //  -->
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
 
 <!-- ========================= SECTION CONTENT ========================= -->
-<section class="section-content padding-y">
+<section class="section-content pb-5 border-bottom">
 <div class="container">
 
 <div class="row">
-	<main class="col-md-9">
-<div class="card">
+	<main class="col-md-8">
 
-<table class="table table-borderless table-shopping-cart">
-<thead class="text-muted">
-<tr class="small text-uppercase">
-  <th scope="col">Product</th>
-  <th scope="col" width="120">Quantity</th>
-  <th scope="col" width="120">Price</th>
-  <th scope="col" class="text-right" width="200"> </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<td>
-		<figure class="itemside">
-			<div class="aside"><img src="images/items/1.jpg" class="img-sm"></div>
-			<figcaption class="info">
-				<a href="#" class="title text-dark">Some name of item goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
-			</figcaption>
-		</figure>
-	</td>
-	<td> 
-		<select class="form-control">
-			<option>1</option>
-			<option>2</option>	
-			<option>3</option>	
-			<option>4</option>	
-		</select> 
-	</td>
-	<td> 
-		<div class="price-wrap"> 
-			<var class="price">$1156.00</var> 
-			<small class="text-muted"> $315.20 each </small> 
-		</div> <!-- price-wrap .// -->
-	</td>
-	<td class="text-right"> 
-	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-	<a href="" class="btn btn-light"> Remove</a>
-	</td>
-</tr>
-<tr>
-	<td>
-		<figure class="itemside">
-			<div class="aside"><img src="images/items/2.jpg" class="img-sm"></div>
-			<figcaption class="info">
-				<a href="#" class="title text-dark">Product name  goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
-			</figcaption>
-		</figure>
-	</td>
-	<td> 
-		<select class="form-control">
-			<option>1</option>
-			<option>2</option>	
-			<option>3</option>	
-			<option>4</option>	
-		</select> 
-	</td>
-	<td> 
-		<div class="price-wrap"> 
-			<var class="price">$149.97</var> 
-			<small  class="text-muted"> $75.00 each </small>  
-		</div> <!-- price-wrap .// -->
-	</td>
-	<td class="text-right"> 
-	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-	<a href="" class="btn btn-light btn-round"> Remove</a>
-	</td>
-</tr>
-<tr>
-	<td>
-		<figure class="itemside">
-			<div class="aside"><img src="images/items/3.jpg" class="img-sm"></div>
-			<figcaption class="info">
-				<a href="#" class="title text-dark">Another name of some product goes just here</a>
-				<p class="small text-muted">Size: XL, Color: blue,  Brand: Tissot</p>
-			</figcaption>
-		</figure>
-	</td>
-	<td> 
-		<select class="form-control">
-			<option>1</option>
-			<option>2</option>	
-			<option>3</option>	
-		</select> 
-	</td>
-	<td> 
-		<div class="price-wrap"> 
-			<var class="price">$98.00</var> 
-			<small class="text-muted"> $578.00 each</small> 
-		</div> <!-- price-wrap .// -->
-	</td>
-	<td class="text-right"> 
-		<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-		<a href="" class="btn btn-light btn-round"> Remove</a>
-	</td>
-</tr>
-</tbody>
-</table>
-
-<div class="card-body border-top">
-	<a href="transaction.html" class="btn btn-primary float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a>
-	<a href="products.html" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
-</div>	
-</div> <!-- card.// -->
-
-<div class="alert alert-success mt-3">
-	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
-</div>
+		<div class="container px-0 shopping-cart-list">
+			<div class="row cart-item mr-md-3">
+				<div class="col-5 col-md-4">
+					<img src="images/product-1.png" class="w-100" />
+				</div>
+				<div class="col-7 col-md-8">
+					<h3>Arato Japanese Style</h3>
+					<p class="category">Bookcases & Display Cases</p>
+					<div class="row mb-4">
+						<div class="col-12 col-md-4">
+							<p><b>Delivery Estimation</b> <span class="text-warning">5 Working Days</span></p>
+						</div>
+						<div class="col-12 col-md-4">
+							<p>Size: <b>21</b></p>
+							<p>Color: <b>Red Maroon</b></p>
+						</div>
+					</div>
+					<p class="price">Rp. 1,200,000</p>
+				</div>
+				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<div class="input-group input-spinner">
+					<div class="input-group-prepend">
+					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
+					</div>
+					<input type="text" class="form-control" value="1">
+					<div class="input-group-append">
+					<button class="btn btn-light rounded-circle" type="button" id="button-minus"> <i class="fa fa-plus"></i> </button>
+					</div>
+				</div>
+			</div>
+			<div class="row cart-item mr-md-3">
+				<div class="col-5 col-md-4">
+					<img src="images/product-1.png" class="w-100" />
+				</div>
+				<div class="col-7 col-md-8">
+					<h3>Arato Japanese Style</h3>
+					<p class="category">Bookcases & Display Cases</p>
+					<div class="row mb-4">
+						<div class="col-12 col-md-4">
+							<p><b>Delivery Estimation</b> <span class="text-warning">5 Working Days</span></p>
+						</div>
+						<div class="col-12 col-md-4">
+							<p>Size: <b>21</b></p>
+							<p>Color: <b>Red Maroon</b></p>
+						</div>
+					</div>
+					<p class="price">Rp. 1,200,000</p>
+				</div>
+				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<div class="input-group input-spinner">
+					<div class="input-group-prepend">
+					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
+					</div>
+					<input type="text" class="form-control" value="1">
+					<div class="input-group-append">
+					<button class="btn btn-light rounded-circle" type="button" id="button-minus"> <i class="fa fa-plus"></i> </button>
+					</div>
+				</div>
+			</div>
+			<div class="row cart-item mr-md-3">
+				<div class="col-5 col-md-4">
+					<img src="images/product-1.png" class="w-100" />
+				</div>
+				<div class="col-7 col-md-8">
+					<h3>Arato Japanese Style</h3>
+					<p class="category">Bookcases & Display Cases</p>
+					<div class="row mb-4">
+						<div class="col-12 col-md-4">
+							<p><b>Delivery Estimation</b> <span class="text-warning">5 Working Days</span></p>
+						</div>
+						<div class="col-12 col-md-4">
+							<p>Size: <b>21</b></p>
+							<p>Color: <b>Red Maroon</b></p>
+						</div>
+					</div>
+					<p class="price">Rp. 1,200,000</p>
+				</div>
+				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<div class="input-group input-spinner">
+					<div class="input-group-prepend">
+					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
+					</div>
+					<input type="text" class="form-control" value="1">
+					<div class="input-group-append">
+					<button class="btn btn-light rounded-circle" type="button" id="button-minus"> <i class="fa fa-plus"></i> </button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</main> <!-- col.// -->
-	<aside class="col-md-3">
+	<aside class="col-md-4">
 		<div class="card mb-3">
 			<div class="card-body">
 			<form>
@@ -259,33 +624,40 @@ $(document).ready(function() {
 </section>
 <!-- ========================= SECTION CONTENT END// ========================= -->
 
-<!-- ========================= SECTION  ========================= -->
-<section class="section-name bg padding-y">
-<div class="container">
-<h6>Payment and refund policy</h6>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-</div><!-- container // -->
-</section>
-<!-- ========================= SECTION  END// ========================= -->
 
 <!-- ========================= FOOTER ========================= -->
+<section class="section-content footer-seo padding-y bg">
+	<div class="container">
+	
+		<article class="text-muted">
+			<br>
+			<h3>Toko Furniture Online, Solusi untuk Kebutuhan Furniture  Minimalis & Modernmu</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+		</article>
+	
+	</div> <!-- container .//  -->
+</section>
+
 <footer class="section-footer border-top">
 	<div class="container">
 		<section class="footer-top  padding-y">
+			<div class="row mb-3">
+				<aside class="col-12">
+					<img src="images/kana_logo.png" />
+				</aside>
+			</div>
 			<div class="row">
-				<aside class="col-md-4 col-12">
+				<aside class="col-md-4 col-12 mb-3">
 					<article class="mr-md-4">
 						<h5 class="title">Contact us</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. </p>
@@ -297,7 +669,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</ul>
 					</article>
 				</aside>
-				<aside class="col-md col-6">
+				<aside class="col-md col-6 mb-3">
 					<h5 class="title">Information</h5>
 					<ul class="list-unstyled">
 						<li> <a href="#">About us</a></li>
@@ -307,7 +679,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<li> <a href="#">Sitemap</a></li>
 					</ul>
 				</aside>
-				<aside class="col-md col-6">
+				<aside class="col-md col-6 mb-3">
 					<h5 class="title">My Account</h5>
 					<ul class="list-unstyled">
 						<li> <a href="#">Contact us</a></li>
@@ -317,39 +689,44 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<li> <a href="#">Open dispute</a></li>
 					</ul>
 				</aside>
-				<aside class="col-md-4 col-12">
+				<aside class="col-md col-12 mb-3">
+					<h5 class="title">My Account</h5>
+					<ul class="list-unstyled">
+						<li> <a href="#">Contact us</a></li>
+						<li> <a href="#">Money refund</a></li>
+						<li> <a href="#">Order status</a></li>
+						<li> <a href="#">Shipping info</a></li>
+						<li> <a href="#">Open dispute</a></li>
+					</ul>
+
+				</aside>
+				<aside class="col-md-3 col-12 newsletter">
 					<h5 class="title">Newsletter</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. </p>
 					
 					<form class="form-inline mb-3">
 						<input type="text" placeholder="Email" class="form-control" name="">
-						<button class="btn ml-2 btn-warning"> Subscribe</button>
+						<button class="btn ml-2 btn-dark"> <i class="fab fa-telegram-plane"></i></button>
 					</form>
-
-					<p class="text-white-50 mb-2">Follow us on social media</p>
-					<div>
-						<a href="#" class="btn btn-icon btn-light"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="btn btn-icon btn-light"><i class="fab fa-twitter"></i></a>
-						<a href="#" class="btn btn-icon btn-light"><i class="fab fa-instagram"></i></a>
-						<a href="#" class="btn btn-icon btn-light"><i class="fab fa-youtube"></i></a>
-					</div>
-
 				</aside>
 			</div> <!-- row.// -->
 		</section>	<!-- footer-top.// -->
 
 		<section class="footer-bottom border-top row">
-			<div class="col-md-6">
-				<p class="mb-0">
-					<a href="">Terms and Conditions</a> | 
-					<a href="">Privacy</a> | 
-					<a href="">Cookies</a>
+			<div class="col-md-4">
+				<p class="text-center text-md-left mb-2">
+					Copyright © - All Rights Reserved - 2020 Wireframe
 				</p>
 			</div>
-			<div class="col-md-6 text-md-right">
-				<i class="fab fa-lg fa-cc-visa"></i>
-				<i class="fab fa-lg fa-cc-paypal"></i>
-				<i class="fab fa-lg fa-cc-mastercard"></i>
+			<div class="col-md-3">
+				<p class="text-center text-md-left mb-2">
+					<a href="#">Policy Statements</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<p class="text-center text-md-left mb-2">
+					<a href="#">Terms & Conditions</a>
+				</p>
 			</div>
 		</section>
 	</div><!-- //container -->
