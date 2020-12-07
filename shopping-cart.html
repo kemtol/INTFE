@@ -508,7 +508,7 @@ $(document).ready(function() {
 					</div>
 					<p class="price">Rp. 1,200,000</p>
 				</div>
-				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<button class="btn delete-cart" data-toggle="modal" data-target="#deleteCartItem"><i class="fa fa-trash-alt"></i></button>
 				<div class="input-group input-spinner">
 					<div class="input-group-prepend">
 					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
@@ -537,7 +537,7 @@ $(document).ready(function() {
 					</div>
 					<p class="price">Rp. 1,200,000</p>
 				</div>
-				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<button class="btn delete-cart" data-toggle="modal" data-target="#deleteCartItem"><i class="fa fa-trash-alt"></i></button>
 				<div class="input-group input-spinner">
 					<div class="input-group-prepend">
 					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
@@ -566,7 +566,7 @@ $(document).ready(function() {
 					</div>
 					<p class="price">Rp. 1,200,000</p>
 				</div>
-				<button class="btn delete-cart"><i class="fa fa-trash-alt"></i></button>
+				<button class="btn delete-cart" data-toggle="modal" data-target="#deleteCartItem"><i class="fa fa-trash-alt"></i></button>
 				<div class="input-group input-spinner">
 					<div class="input-group-prepend">
 					<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
@@ -574,6 +574,32 @@ $(document).ready(function() {
 					<input type="text" class="form-control" value="1">
 					<div class="input-group-append">
 					<button class="btn btn-light rounded-circle" type="button" id="button-minus"> <i class="fa fa-plus"></i> </button>
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="deleteCartItem" tabindex="-1" role="dialog" aria-labelledby="deleteCartItem" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="m-auto icon-cart rounded-circle">
+								<img src="images/shopping-cart-big.png" />
+							</div>
+							<div class="title">
+								Are You Sure to Delete this Item From Shopping Cart?
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<button class="btn btn-block btn-dark btn-outline-kana">Yes</button>
+								</div>
+								<div class="col-12 col-md-6">
+									<button class="btn btn-block btn-outline-dark btn-outline">Move To Wishlist</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
