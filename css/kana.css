@@ -822,31 +822,31 @@
 
 /* Login Register Modal -- START */
 
-#loginRegisterModal, #loginRegisterModal .modal-content {
+#loginModal, #registerModal, #loginModal .modal-content, #registerModal .modal-content {
     border-radius: 0;
 }
 
-#loginRegisterModal .modal-body {
+#loginModal .modal-body, #registerModal .modal-body {
     padding: 0;
 }
 
-#loginRegisterModal .modal-body h4 {
+#loginModal .modal-body h4, #registerModal .modal-body h4 {
     font-size: 20px;
     color: #2b2b2b;
     font-weight: 300;
 }
 
-#loginRegisterModal .modal-body p, #loginRegisterModal .modal-body p a {
+#loginModal .modal-body p, #registerModal .modal-body p, #loginModal .modal-body p a, #registerModal .modal-body p a {
     font-size: 14px;
     color: #6a6a6a;
     font-weight: 300;
 }
 
-#loginRegisterModal .modal-body p a {
+#loginModal .modal-body p a, #registerModal .modal-body p a {
     text-decoration: underline;
 }
 
-#loginRegisterModal .modal-body .text-separator {
+#loginModal .modal-body .text-separator, #registerModal .modal-body .text-separator {
     font-size: 10px;
     color: #909090;
 }
