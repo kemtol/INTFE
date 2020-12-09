@@ -53,6 +53,34 @@
 
 /* GENERAL -- END */
 
+/* Flash Time -- START */
+
+.flash-time img {
+    vertical-align: middle;
+}
+
+.flash-time span {
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.flash-time .timer {
+    display: inline-block;
+}
+
+.flash-time .timer .count {
+    display: inline-block;
+    background: #2b2b2b;
+    padding: 2px 8px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+/* Flash Time -- END */
+
 /* Header Top Light -- START */
 .header-top-light {
     background: #f1f1f1;
