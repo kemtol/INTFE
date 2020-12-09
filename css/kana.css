@@ -51,6 +51,23 @@
     letter-spacing: .15em;
 }
 
+.separator-custom {
+    text-align: center;
+}
+
+.separator-custom hr, .separator-custom span {
+    color: #909090;
+}
+
+.separator-custom span {
+    background: white;
+    padding: 10px;
+    position: relative;
+    top: -28px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
 /* GENERAL -- END */
 
 /* Flash Time -- START */
@@ -80,6 +97,118 @@
 }
 
 /* Flash Time -- END */
+
+/* Checkout -- START */
+
+.tracking-wrapper {
+    width: 600px;
+    margin: 20px auto; 
+}
+.progressbar {
+    counter-reset: step;
+}
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.progressbar li span {
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #eaeaea;
+}
+.progressbar li:after {
+    width: 60%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #eaeaea;
+    top: 15px;
+    left: -30%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: white;
+}
+.progressbar li.active:before {
+    border-color: #2b2b2b;
+    background: #2b2b2b;
+}
+
+.progressbar li.active span {
+    color: #2b2b2b;
+}
+.progressbar li.active:after {
+    background-color: #2b2b2b;
+}
+
+@media only screen and (max-width: 719px) {
+    .tracking-wrapper {
+        width: fit-content;
+        margin: initial;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tracking-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .progressbar {
+        width: 600px;
+        padding-left: 0;
+    }
+}
+
+.checkout .checkout-content h3 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+.checkout .checkout-content h4 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.checkout .checkout-content p {
+    font-weight: 300;
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+.checkout .checkout-content .guest-step {
+    border-right: 1px solid #909090;
+}
+
+@media only screen and (max-width: 719px) {
+    .checkout .checkout-content .guest-step {
+        border-bottom: 1px solid #909090;
+    }
+}
+
+/* Checkout -- END */
 
 /* Header Top Light -- START */
 .header-top-light {
