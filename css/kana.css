@@ -537,6 +537,8 @@
 .product-list .card-product-grid:hover, .product-card:hover {
     box-shadow: none;
     transform: unset;
+    transition: all 0.3s;
+    z-index: 3;
 }
 
 .product-list .card-product-grid .img-wrap, .product-card .img-wrap {
@@ -546,6 +548,15 @@
 
 .product-list .card-product-grid .img-wrap img, .product-card .img-wrap img {
     width: 100%;
+}
+
+.product-list .card-product-grid .img-wrap.has-second-image, .product-card .img-wrap.has-second-image {
+    background-size: 100% 100% !important;
+}
+
+.product-list .card-product-grid:hover .img-wrap.has-second-image img, .product-card:hover .img-wrap.has-second-image img {
+    opacity: 0 !important;
+    transition: opacity .2s ease-out;
 }
 
 .product-list .card-product-grid .img-wrap .wishlist .wishlist-container, .product-card .img-wrap .wishlist .wishlist-container {
