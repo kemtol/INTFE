@@ -245,6 +245,39 @@
     }
 }
 
+#accordion_pay .card {
+    border-radius: 0;
+}
+
+#accordion_pay #pay_paynet {
+    border-top: 1px solid #d8d8d8
+} 
+
+#accordion_pay .card .card-header {
+    width: 80%;
+}
+
+#accordion_pay .card .card-header h6 {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+#accordion_pay .card .card-header .btn-edit {
+    font-weight: 600;
+    font-size: 12px;
+    color: #2b2b2b;
+}
+
+#accordion_pay .card .card-header button {
+    position: absolute;
+    right: 0;
+}
+
+#accordion_pay .card .btn-outline-kana {
+    border-radius: 0;
+}
+
 /* Checkout -- END */
 
 /* Header Top Light -- START */

@@ -515,51 +515,119 @@ $(document).ready(function() {
 						Nomor Telpon yang Dimasukkan Tidak lengkap
 					</div>
 				</div>
-				<div class="form-group">
-					<label for="alamatLengkap">Alamat Lengkap</label>
-					<input type="text" class="form-control" id="alamatLengkap" placeholder="Alamat Lengkap" required>
-					<div class="invalid-feedback">
-						Alamat belum dimasukkan
+				<label>Pilih Alamat</label>
+				<article class="accordion mb-3" id="accordion_pay">
+					<div class="card">
+						<header class="card-header">
+							<button class="btn btn-edit float-right">Edit</button>
+							<label class="form-check" data-toggle="collapse" data-target="#alamatKantor" aria-expanded="true">
+								<input class="form-check-input" name="payment-option" checked="" type="radio" value="option2">
+								<h6 class="form-check-label"> 
+									Alamat Kantor 
+								</h6>
+							</label>
+						</header>
+						<div id="alamatKantor" class="collapse show" data-parent="#accordion_pay" style="">
+						<div class="card-body">
+							<div class="form-row">
+								<div class="col-12 col-md-6 mb-3">
+									<label for="provinsi">Provinsi</label>
+									<select class="form-control" required>
+										<option>Jawa Barat</option>
+										<option>DKI Jakarta</option>
+									</select>
+									<div class="invalid-feedback">
+										Provinsi belum dipilih
+									</div>
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="kotaKabupaten">Kota / Kabupaten</label>
+									<select class="form-control" required>
+										<option>Bandung</option>
+										<option>Cirebon</option>
+									</select>
+									<div class="invalid-feedback">
+										Kota / Kabupaten belum dipilih
+									</div>
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="kecamatan">Kecamatan</label>
+									<select class="form-control" required>
+										<option>Tanah Sareal</option>
+										<option>Cimahpar</option>
+									</select>
+									<div class="invalid-feedback">
+										Kecamatan belum dipilih
+									</div>
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="kodepos">Kode POS</label>
+									<input type="number" class="form-control" id="kodepos" placeholder="123456" required>
+									<div class="invalid-feedback">
+										Kode POS belum dimasukkan
+									</div>
+								</div>
+							</div>
+						</div> <!-- card body .// -->
+						</div> <!-- collapse .// -->
+					</div> <!-- card.// -->
+					<div class="card">
+						<header class="card-header">
+							<button class="btn float-right btn-edit">Edit</button>
+							<label class="form-check collapsed" data-toggle="collapse" data-target="#alamatRumah" aria-expanded="false">
+								<input class="form-check-input" name="payment-option" type="radio" value="option2">
+								<h6 class="form-check-label"> Alamat Rumah  </h6>
+							</label>
+						</header>
+						<div id="alamatRumah" class="collapse" data-parent="#accordion_pay" style="">
+							<div class="card-body">
+								<div class="form-row">
+									<div class="col-12 col-md-6 mb-3">
+										<label for="provinsi">Provinsi</label>
+										<select class="form-control" required>
+											<option>Jawa Barat</option>
+											<option>DKI Jakarta</option>
+										</select>
+										<div class="invalid-feedback">
+											Provinsi belum dipilih
+										</div>
+									</div>
+									<div class="col-12 col-md-6 mb-3">
+										<label for="kotaKabupaten">Kota / Kabupaten</label>
+										<select class="form-control" required>
+											<option>Bandung</option>
+											<option>Cirebon</option>
+										</select>
+										<div class="invalid-feedback">
+											Kota / Kabupaten belum dipilih
+										</div>
+									</div>
+									<div class="col-12 col-md-6 mb-3">
+										<label for="kecamatan">Kecamatan</label>
+										<select class="form-control" required>
+											<option>Tanah Sareal</option>
+											<option>Cimahpar</option>
+										</select>
+										<div class="invalid-feedback">
+											Kecamatan belum dipilih
+										</div>
+									</div>
+									<div class="col-12 col-md-6 mb-3">
+										<label for="kodepos">Kode POS</label>
+										<input type="number" class="form-control" id="kodepos" placeholder="123456" required>
+										<div class="invalid-feedback">
+											Kode POS belum dimasukkan
+										</div>
+									</div>
+								</div>
+							</div> <!-- card body .// -->
+						</div> <!-- collapse .// -->
+					</div> <!-- card.// -->
+					<div class="card">
+						<button class="btn btn-block btn-dark btn-outline-kana">Tambah Alamat Baru</button>
 					</div>
-				</div>
+				</article>
 				<div class="form-row">
-					<div class="col-12 col-md-6 mb-3">
-						<label for="provinsi">Provinsi</label>
-						<select class="form-control" required>
-							<option>Jawa Barat</option>
-							<option>DKI Jakarta</option>
-						</select>
-						<div class="invalid-feedback">
-							Provinsi belum dipilih
-						</div>
-					</div>
-					<div class="col-12 col-md-6 mb-3">
-						<label for="kotaKabupaten">Kota / Kabupaten</label>
-						<select class="form-control" required>
-							<option>Bandung</option>
-							<option>Cirebon</option>
-						</select>
-						<div class="invalid-feedback">
-							Kota / Kabupaten belum dipilih
-						</div>
-					</div>
-					<div class="col-12 col-md-6 mb-3">
-						<label for="kecamatan">Kecamatan</label>
-						<select class="form-control" required>
-							<option>Tanah Sareal</option>
-							<option>Cimahpar</option>
-						</select>
-						<div class="invalid-feedback">
-							Kecamatan belum dipilih
-						</div>
-					</div>
-					<div class="col-12 col-md-6 mb-3">
-						<label for="kodepos">Kode POS</label>
-						<input type="number" class="form-control" id="kodepos" placeholder="123456" required>
-						<div class="invalid-feedback">
-							Kode POS belum dimasukkan
-						</div>
-					</div>
 					<div class="col-12 col-md-6 mb-3">
 						<label for="tanggalPengantaran">Tanggal Pengantaran</label>
 						<input type="date" class="form-control" id="tanggalPengantaran" required>
