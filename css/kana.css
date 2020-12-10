@@ -367,6 +367,35 @@
 
 /* Status Box -- END */
 
+/* Payment Confirmation -- START */
+
+.payment-confirmation h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+.payment-confirmation .sidebar {
+    border: none;
+    border-radius: 0;
+}
+
+.payment-confirmation .sidebar a {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    color: #2b2b2b;
+    font-weight: 300;
+    font-size: 14px;
+    background: none;
+}
+
+.payment-confirmation .sidebar a.active {
+    font-weight: 600;
+}
+
+/* Payment Confirmation -- END */
+
 /* Confirmation Box -- START */
 
 .confirmation-box {
