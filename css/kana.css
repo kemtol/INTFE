@@ -278,6 +278,34 @@
     border-radius: 0;
 }
 
+#accordion_pay .payment-options {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#accordion_pay .payment-options .bank-type {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 10px;
+}
+
+#accordion_pay .payment-options .bank-type .title {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#accordion_pay .payment-options .bank-type p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#accordion_pay .payment-options .bank-type .copy-to-clipboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* Checkout -- END */
 
 /* Header Top Light -- START */
