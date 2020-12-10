@@ -312,6 +312,61 @@
 
 /* Checkout -- END */
 
+/* Status Box -- START */
+
+.status-box {
+    border: 1px solid #d8d8d8;
+    background: white;
+}
+
+.status-box.failed {
+    border: 1px solid #EA6564;
+}
+
+.status-box .status-box-header {
+    padding: 15px 20px;
+    background: #2b2b2b;
+    color: white;
+}
+
+.status-box.failed .status-box-header {
+    background: #EA6564;
+}
+
+.status-box .status-box-header .status, .status-box .status-box-header i {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.status-box .status-box-header i {
+    font-size: 32px;
+}
+
+.status-box .status-box-header img {
+    height: 32px;
+    width: 32px;
+}
+
+.status-box .status-box-header span {
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.status-box .status-box-header .price {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+.status-box .desc {
+    font-weight: 300;
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+/* Status Box -- END */
+
 /* Confirmation Box -- START */
 
 .confirmation-box {
