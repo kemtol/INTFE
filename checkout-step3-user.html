@@ -649,7 +649,46 @@ $(document).ready(function() {
 						</header>
 						<div id="creditCard" class="collapse" data-parent="#accordion_pay" style="">
 							<div class="card-body">
-								
+								<div class="form-row">
+									<div class="col-12 col-md-8 mb-3">
+										<label for="creditCardNumber">Nomor Kartu Kredit</label>
+										<input type="number" class="form-control" id="creditCardNumber" placeholder="123456" required>
+										<div class="invalid-feedback">
+											Nomor kartu kredit belum dimasukkan
+										</div>
+									</div>
+									<div class="col-12 col-md-4 mb-3">
+										<label for="masaBerlaku">Masa Berlaku</label>
+										<input type="month" class="form-control" id="masaBerlaku" required>
+										<div class="invalid-feedback">
+											Masa berlaku belum dimasukkan
+										</div>
+									</div>
+									<div class="col-12 col-md-8 mb-3">
+										<label for="cardName">Nama Pada Kartu</label>
+										<input type="text" class="form-control" id="cardName" required>
+										<div class="invalid-feedback">
+											Nama belum dimasukkan
+										</div>
+									</div>
+									<div class="col-12 col-md-4 mb-3">
+										<label for="cvv">CVV</label>
+										<input type="number" class="form-control" id="cvv" required>
+										<div class="invalid-feedback">
+											CVV belum dimasukkan
+										</div>
+									</div>
+									<div class="form-group w-100">
+										<label for="alamatLengkap">Jenis Pembayaran</label>
+										<select class="form-control w-100" required>
+											<option>Pembayaran Penuh</option>
+											<option>Pembayaran Di Tempat</option>
+										</select>
+										<div class="invalid-feedback">
+											Jenis pembayaran belum dipilih
+										</div>
+									</div>
+								</div>
 							</div> <!-- card body .// -->
 						</div> <!-- collapse .// -->
 					</div> <!-- card.// -->
