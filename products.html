@@ -356,12 +356,41 @@ $(document).ready(function() {
 						</a>
 					</div>  <!-- widget-header .// -->
 
-					<a href="#" class="widget-header mr-3">
-						<div class="icon">
+					<div class="widget-header mr-3 cart-dropdown">
+						<div class="icon" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img src="images/shopping-cart.png" />
 							<span class="notify">0</span>
 						</div>
-					</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+							<div class="shopping-cart-list container">
+								<div class="row cart-item">
+									<div class="col-5 col-md-4">
+										<img src="images/product-1.png" class="w-100" />
+									</div>
+									<div class="col-7 col-md-8">
+										<h3>Arato Japanese Style</h3>
+										<p class="category">Bookcases & Display Cases</p>
+										<p>Size: <b>21</b></p>
+										<p>Color: <b>Red Maroon</b></p>
+										<p class="price text-right">Rp. 1,200,000</p>
+										<div class="input-group input-spinner">
+											<div class="input-group-prepend">
+											<button class="btn btn-light rounded-circle disabled" type="button" id="button-plus"> <i class="fa fa-minus"></i> </button>
+											</div>
+											<input type="text" class="form-control" value="1">
+											<div class="input-group-append">
+											<button class="btn btn-light rounded-circle" type="button" id="button-minus"> <i class="fa fa-plus"></i> </button>
+											</div>
+										</div>
+									</div>
+									<button class="btn delete-cart" data-toggle="modal" data-target="#deleteCartItem"><i class="fa fa-trash-alt"></i></button>
+								</div>
+								<div class="text-center">
+									<button class="btn btn-dark btn-outline-kana my-3">View Shopping Cart <i class="fa fa-angle-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
 				
 				</div> <!-- widgets-wrap.// -->
 			</div> <!-- col.// -->
