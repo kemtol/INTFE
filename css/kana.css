@@ -2,6 +2,13 @@
 
 /* GENERAL -- START */
 
+.modal { overflow-y: auto } 
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
 .widget-header .notify {
     top: -5px;
     font-size: 10px;
@@ -1065,8 +1072,11 @@
     font-size: 14px;
     color: #2b2b2b;
     cursor: pointer;
-    padding: 3px 6px;
+    padding: 5px 6px;
     margin-right: 8px;
+    text-align: center;
+    width: 32px;
+    height: 32px;
 }
 
 .product-list .card-product-grid .bottom-wrap .size-options .type.active, .size-options .type.active, .product-card .bottom-wrap .size-options .type.active {
