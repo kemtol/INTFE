@@ -1,3 +1,4 @@
+// Dropdown hamburger button
 function bodyCssChange() {
     if ($(window).width() < 720) {
         if($('.header-main .navbar-collapse').hasClass('show')) {
@@ -7,7 +8,9 @@ function bodyCssChange() {
         }
     }
 }
+// Dropdown hamburger button.
 
+// Validation form
 window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
@@ -22,7 +25,9 @@ window.addEventListener('load', function() {
       }, false);
     });
 }, false);
+// Validation form.
 
+// Attach file
 function readFile(input) {
   if (input.files && input.files[0]) {
   var reader = new FileReader();
@@ -69,3 +74,4 @@ function readFile(input) {
   previewZone.addClass('hidden');
   reset(dropzone);
  });
+ // Attach file.

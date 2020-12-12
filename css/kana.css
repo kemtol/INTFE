@@ -349,6 +349,14 @@
     border-radius: 0;
 }
 
+#accordion_pay .collapse.show {
+    background: #fafafa;
+}
+
+#accordion_pay .card:has(.collapse.show) {
+    background: #fafafa;
+}
+
 .payment-options {
     list-style: none;
     padding-left: 0;
@@ -402,6 +410,12 @@
 
 .status-box.failed .status-box-header {
     background: #EA6564;
+}
+
+@media only screen and (max-width: 719px) {
+    .status-box .status-box-header {
+        padding: 15px 50px;
+    }
 }
 
 .status-box .status-box-header .status, .status-box .status-box-header i {
@@ -541,6 +555,14 @@
 .order-box .order-item-box .order-item .price {
     position: absolute;
     bottom: 0;
+}
+
+@media only screen and (max-width: 719px) {
+    .order-box .order-item-box .order-item .action-wrapper .button-action {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
 }
 
 /* Order Box -- END */
@@ -1000,6 +1022,10 @@
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 10px;
+}
+
+.product-list .card-product-grid .color-option, .color-option {
+    min-height: 50px;
 }
 
 .product-list .card-product-grid .color-option ul, .color-option ul, .product-card .color-option ul {
