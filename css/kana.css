@@ -572,6 +572,15 @@
     position: relative;
 }
 
+.order-box .order-item-box.return-item .custom-control {
+    padding-left: 50px;
+}
+
+.order-box .order-item-box.return-item .custom-control-label:before, .order-box .order-item-box.return-item .custom-control-label:after {
+    top: 40%;
+    left: -45px;
+}
+
 @media only screen and (max-width: 719px) {
     .order-box .order-item-box .order-item .action-wrapper .button-action {
         position: relative;
