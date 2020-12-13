@@ -557,7 +557,60 @@ $(document).ready(function() {
 					<button class="btn btn-block btn-outline-dark btn-outline mb-3">Back</button>
 				</div>
 				<div class="col-12 col-md-3">
-					<button class="btn btn-block btn-dark btn-outline-kana">Next</button>
+					<button class="btn btn-block btn-dark btn-outline-kana" data-toggle="modal" data-target="#returnOrderSubmitted">Next</button>
+				</div>
+			</div>
+			<div class="modal fade" id="returnOrderSubmitted" tabindex="-1" role="dialog" aria-labelledby="returnOrderSubmitted" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle"><img src="images/check-circle.png" /> Return order has been submitted</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-12 col-md-8 m-auto">
+									<div class="return-box mb-3">
+										<h3>Return Order Detail</h3>
+										<p class="mb-2"><b>Order ID</b></p>
+										<p>#ORD001</p>
+										<p><b>Item Detail</b></p>
+										<div class="row">
+											<div class="col-4">
+												<img src="images/product-4.png" class="w-100" />
+											</div>
+											<div class="col-8">
+												<h3>Arato Japanese Style</h3>
+												<p class="category">Bookcases & Display Cases</p>
+												<p class="mb-2">Size: <b>21</b></p>
+												<p class="mb-2">Color: <b>Red Maroon</b></p>
+												<p class="mb-2">Quantity: <b>1</b></p>
+											</div>
+										</div>
+										<div class="form-group my-3">
+											<label for="notes">Return Reason</label>
+											<textarea rows="3" class="form-control" id="notes" disabled>Ada kerusakan saat barang diterima </textarea>
+										</div>
+									</div>
+									<div class="return-box">
+										<p><b>Image Attachment</b></p>
+										<div class="review-photo mt-3">
+											<img src="images/reviews-1.png" />
+											<img src="images/reviews-2.png" />
+											<img src="images/reviews-3.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-5">
+								<div class="col-12 col-md-3 m-auto">
+									<button class="btn btn-block btn-dark btn-outline-kana">Back To Homepage</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

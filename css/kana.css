@@ -1394,24 +1394,24 @@
 
 /* Add To Cart Modal -- START */
 
-#addToCart .modal-content {
+#addToCart .modal-content, #returnOrderSubmitted .modal-content {
     border-radius: 0;
 }
 
-#addToCart .modal-header {
+#addToCart .modal-header, #returnOrderSubmitted .modal-header {
     background: #2b2b2b;
     text-align: center;
     color: white;
     border-radius: 0;
 }
 
-#addToCart .modal-header h5 {
+#addToCart .modal-header h5, #returnOrderSubmitted .modal-header h5 {
     font-size: 16px;
     font-weight: normal;
     width: 100%;
 }
 
-#addToCart .modal-header .close {
+#addToCart .modal-header .close, #returnOrderSubmitted .modal-header .close {
     opacity: 1;
     color: white;
     text-shadow: none;
@@ -1435,6 +1435,15 @@
 }
 
 /* Add To Cart Modal -- END */
+
+/* Return Box -- START */
+
+.return-box {
+    background: #fafafa;
+    padding: 15px 20px;
+}
+
+/* Return Box -- END */
 
 /* Pagination -- START */
 
