@@ -47,7 +47,7 @@ $(document).ready(function() {
 </script>
 
 </head>
-<body>
+<body class="checkout">
 
 <header class="section-header">
 
@@ -475,7 +475,7 @@ $(document).ready(function() {
 <!-- ==== Section Content ==== -->
 
 <div class="container py-5">
-	<div class="row payment-confirmation">
+	<div class="row payment-confirmation checkout-content">
 		<div class="col-12 col-md-3 mb-5 d-none d-md-block">
 			<ul class="list-group sidebar">
 				<a class="list-group-item" href="#">My Account</a>
@@ -486,7 +486,7 @@ $(document).ready(function() {
 			</ul>
 		</div>
 		<div class="col-12 col-md-9">
-			<h2 class="mb-4 pt-2">Select Items To Return</h2>
+			<h2 class="mb-4 pt-2">Input Return Details</h2>
 			<form>
 				<div class="order-box mb-4">
 					<div class="order-header">
@@ -498,52 +498,56 @@ $(document).ready(function() {
 					</div>
 					<div class="order-item-box return-item">
 						<div class="order-item py-4">
-							<label class="custom-control custom-checkbox">
-								<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
-								<div class="custom-control-label">
-									<div class="row">
-										<div class="col-12 col-md-6 order-2 order-md-1">
-											<div class="row item mb-5">
-												<div class="col-4 col-md-6">
-													<img src="images/product-1.png" class="w-100" />
-												</div>
-												<div class="col-8 col-md-6">
-													<h3>Arato Japanese Style</h3>
-													<p class="category">Bookcases & Display Cases</p>
-													<p>Size: <b>21</b></p>
-													<p>Color: <b>Red Maroon</b></p>
-													<p>Quantity: <b>1</b></p>
+							<div class="row">
+								<div class="col-12 col-md-7 order-2 order-md-1">
+									<div class="row item mb-5">
+										<div class="col-4 col-md-5">
+											<img src="images/product-1.png" class="w-100" />
+										</div>
+										<div class="col-8 col-md-7">
+											<h3>Arato Japanese Style</h3>
+											<p class="category">Bookcases & Display Cases</p>
+											<p>Size: <b>21</b></p>
+											<p>Color: <b>Red Maroon</b></p>
+											<div class="row">
+												<div class="col-6">
 													<p><b>Order Arrived</b></p>
 													<p>21 October 2020</p>
+												</div>
+												<div class="col-6">
+													<p><b>Select Qty Return</b></p>
+													<select class="form-control purchase-amount">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+													</select>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							</label>
-							<label class="custom-control custom-checkbox">
-								<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
-								<div class="custom-control-label">
-									<div class="row">
-										<div class="col-12 col-md-6 order-2 order-md-1">
-											<div class="row item mb-5">
-												<div class="col-4 col-md-6">
-													<img src="images/product-1.png" class="w-100" />
-												</div>
-												<div class="col-8 col-md-6">
-													<h3>Arato Japanese Style</h3>
-													<p class="category">Bookcases & Display Cases</p>
-													<p>Size: <b>21</b></p>
-													<p>Color: <b>Red Maroon</b></p>
-													<p>Quantity: <b>1</b></p>
-													<p><b>Order Arrived</b></p>
-													<p>21 October 2020</p>
-												</div>
+									<div class="form-group mb-3">
+										<label for="notes">Return Reason</label>
+										<textarea rows="3" class="form-control" id="notes">Ada kerusakan saat barang diterima </textarea>
+									</div>
+									<div class="form-group">
+										<label for="buktiPembayaran">Unggah Bukti Pembayaran</label>
+										<div class="box-body"></div>
+										<div class="dropzone-wrapper">
+											<div class="dropzone-desc">
+												<i class="glyphicon glyphicon-download-alt"></i>
+												<p>Drag and Drop or Browse</p>
+												<p>File berformat .PNG, .PDF atau .JPEG</p>
 											</div>
+											<input type="file" name="img_logo" class="dropzone">
+										</div>
+										<div class="review-photo mt-3">
+											<img src="images/reviews-1.png" />
+											<img src="images/reviews-2.png" />
+											<img src="images/reviews-3.png" />
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 				</div>

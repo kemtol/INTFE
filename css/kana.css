@@ -1275,9 +1275,9 @@
     font-size: 14px;
 }
 
-.product-detail .purchase-amount {
-    background: #f1f1f1;
-    border: none;
+.product-detail .purchase-amount, .return-item .purchase-amount {
+    background: #f1f1f1 !important;
+    border: none !important;
     border-radius: 0;
 }
 
@@ -1360,7 +1360,7 @@
     font-weight: normal;
 }
 
-.product-detail .product-detail-desc .review-item .review-photo img {
+.product-detail .product-detail-desc .review-item .review-photo img, .review-photo img {
     display: inline-block;
     margin-right: 15px;
     border: 1px dashed #c4c4c4;
