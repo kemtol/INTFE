@@ -47,7 +47,7 @@ $(document).ready(function() {
 </script>
 
 </head>
-<body class="checkout">
+<body>
 
 <header class="section-header">
 
@@ -359,7 +359,7 @@ $(document).ready(function() {
 					<a href="#" class="widget-header mr-3">
 						<div class="icon">
 							<img src="images/shopping-cart.png" />
-							<!-- <span class="notify">0</span> -->
+							<span class="notify">0</span>
 						</div>
 					</a>
 				
@@ -474,247 +474,51 @@ $(document).ready(function() {
 
 <!-- ==== Section Content ==== -->
 
-<div class="container">
-	<div class="row my-5 text-center">
-		<div class="tracking-wrapper">
-			<ul class="progressbar">
-				<li class="active"><span>Customer</span></li>
-				<li class="active"><span>Shipping</span></li>
-				<li><span>Payment</span></li>
-				<li><span>Confirmation</span></li>
+<div class="container py-5">
+	<div class="row payment-confirmation">
+		<div class="col-12 col-md-3 mb-5 d-none d-md-block">
+			<ul class="list-group sidebar">
+				<a class="list-group-item active" href="#">My Account</a>
+				<a class="list-group-item" href="#"> Wishlist </a>
+				<a class="list-group-item" href="#"> Order Details </a>
+				<a class="list-group-item" href="#"> Address List </a>
+				<a class="list-group-item" href="#"> Sign Out </a>
 			</ul>
 		</div>
-	</div>
-</div>
-
-<div class="container py-5">
-
-	<div class="row">
-		<main class="col-md-8 checkout-content order-2 order-md-1">
-	
-			<h3 class="mb-4">Customer Detail</h3>
-			<form class="needs-validation" novalidate>
+		<div class="col-12 col-md-6">
+			<h2>My Account</h2>
+			<form class="needs-validation kana-form" novalidate>
 				<div class="form-group">
 					<label for="namaLengkap">Nama Lengkap</label>
-					<input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap" required>
+					<input type="text" class="form-control" id="namaLengkap" required>
 					<div class="invalid-feedback">
 						Nama belum dimasukkan
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="alamatEmail">Alamat Email</label>
-					<input type="email" class="form-control" id="alamatEmail" placeholder="Alamat Email" required>
+					<label for="emailAddress">Alamat Email</label>
+					<input type="email" class="form-control" id="emailAddress" required>
 					<div class="invalid-feedback">
-						Email belum dimasukkan
+						Alamat email belum dimasukkan
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="nomorTelepon">Nomor Telepon</label>
-					<input type="tel" class="form-control" id="nomorTelepon" placeholder="Nomer Telepon" required>
+					<label for="noTelepon">Nomor Telepon</label>
+					<input type="tel" class="form-control" id="noTelepon" required>
 					<div class="invalid-feedback">
-						Nomor Telpon yang Dimasukkan Tidak lengkap
-					</div>
-				</div>
-				<h3 class="mt-4 mb-2">Shipping Detail</h3>
-				<label class="custom-control custom-checkbox check-same-address my-3">
-					<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
-					<div class="custom-control-label">Same As Billing Address </div>
-				  </label>
-				<label>Pilih Alamat</label>
-				<article class="accordion mb-3" id="accordion_pay">
-					<div class="card">
-						<header class="card-header">
-							<button class="btn btn-edit float-right">Edit</button>
-							<label class="form-check" data-toggle="collapse" data-target="#alamatKantor" aria-expanded="true">
-								<input class="form-check-input" name="payment-option" checked="" type="radio" value="option2">
-								<h6 class="form-check-label"> 
-									Alamat Kantor 
-								</h6>
-							</label>
-						</header>
-						<div id="alamatKantor" class="collapse show" data-parent="#accordion_pay" style="">
-						<div class="card-body">
-							<div class="form-group">
-								<label for="alamatLengkap">Alamat Lengkap</label>
-								<input type="text" class="form-control" id="alamatLengkap" placeholder="Alamat Lengkap" required>
-								<div class="invalid-feedback">
-									Alamat belum dimasukkan
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="col-12 col-md-6 mb-3">
-									<label for="provinsi">Provinsi</label>
-									<select class="form-control" required>
-										<option>Jawa Barat</option>
-										<option>DKI Jakarta</option>
-									</select>
-									<div class="invalid-feedback">
-										Provinsi belum dipilih
-									</div>
-								</div>
-								<div class="col-12 col-md-6 mb-3">
-									<label for="kotaKabupaten">Kota / Kabupaten</label>
-									<select class="form-control" required>
-										<option>Bandung</option>
-										<option>Cirebon</option>
-									</select>
-									<div class="invalid-feedback">
-										Kota / Kabupaten belum dipilih
-									</div>
-								</div>
-								<div class="col-12 col-md-6 mb-3">
-									<label for="kecamatan">Kecamatan</label>
-									<select class="form-control" required>
-										<option>Tanah Sareal</option>
-										<option>Cimahpar</option>
-									</select>
-									<div class="invalid-feedback">
-										Kecamatan belum dipilih
-									</div>
-								</div>
-								<div class="col-12 col-md-6 mb-3">
-									<label for="kodepos">Kode POS</label>
-									<input type="number" class="form-control" id="kodepos" placeholder="123456" required>
-									<div class="invalid-feedback">
-										Kode POS belum dimasukkan
-									</div>
-								</div>
-							</div>
-						</div> <!-- card body .// -->
-						</div> <!-- collapse .// -->
-					</div> <!-- card.// -->
-					<div class="card">
-						<header class="card-header">
-							<button class="btn float-right btn-edit">Edit</button>
-							<label class="form-check collapsed" data-toggle="collapse" data-target="#alamatRumah" aria-expanded="false">
-								<input class="form-check-input" name="payment-option" type="radio" value="option2">
-								<h6 class="form-check-label"> Alamat Rumah  </h6>
-							</label>
-						</header>
-						<div id="alamatRumah" class="collapse" data-parent="#accordion_pay" style="">
-							<div class="card-body">
-								<div class="form-group">
-									<label for="alamatLengkap">Alamat Lengkap</label>
-									<input type="text" class="form-control" id="alamatLengkap" placeholder="Alamat Lengkap" required>
-									<div class="invalid-feedback">
-										Alamat belum dimasukkan
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="col-12 col-md-6 mb-3">
-										<label for="provinsi">Provinsi</label>
-										<select class="form-control" required>
-											<option>Jawa Barat</option>
-											<option>DKI Jakarta</option>
-										</select>
-										<div class="invalid-feedback">
-											Provinsi belum dipilih
-										</div>
-									</div>
-									<div class="col-12 col-md-6 mb-3">
-										<label for="kotaKabupaten">Kota / Kabupaten</label>
-										<select class="form-control" required>
-											<option>Bandung</option>
-											<option>Cirebon</option>
-										</select>
-										<div class="invalid-feedback">
-											Kota / Kabupaten belum dipilih
-										</div>
-									</div>
-									<div class="col-12 col-md-6 mb-3">
-										<label for="kecamatan">Kecamatan</label>
-										<select class="form-control" required>
-											<option>Tanah Sareal</option>
-											<option>Cimahpar</option>
-										</select>
-										<div class="invalid-feedback">
-											Kecamatan belum dipilih
-										</div>
-									</div>
-									<div class="col-12 col-md-6 mb-3">
-										<label for="kodepos">Kode POS</label>
-										<input type="number" class="form-control" id="kodepos" placeholder="123456" required>
-										<div class="invalid-feedback">
-											Kode POS belum dimasukkan
-										</div>
-									</div>
-								</div>
-							</div> <!-- card body .// -->
-						</div> <!-- collapse .// -->
-					</div> <!-- card.// -->
-					<div class="card">
-						<button class="btn btn-block btn-dark btn-outline-kana">Tambah Alamat Baru</button>
-					</div>
-				</article>
-				<div class="form-row">
-					<div class="col-12 col-md-6 mb-3">
-						<label for="tanggalPengantaran">Tanggal Pengantaran</label>
-						<input type="date" class="form-control" id="tanggalPengantaran" required>
-						<div class="invalid-feedback">
-							Tanggal Pengantaran belum dimasukkan
-						</div>
-					</div>
-					<div class="col-12 col-md-6 mb-3">
-						<label for="waktuPengantaran">Waktu Pengantaran</label>
-						<select class="form-control" required>
-							<option>20:00 WIB</option>
-							<option>21:00 WIB</option>
-						</select>
-						<div class="invalid-feedback">
-							Waktu pengantaran belum dipilih
-						</div>
+						Nomor telepon belum dimasukkan
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="notes">Catatan Pengiriman</label>
-					<textarea rows="3" class="form-control" id="notes" placeholder="Catatan Pengiriman"></textarea>
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" required>
+					<div class="invalid-feedback">
+						Password belum dimasukkan
+					</div>
 				</div>
-				<hr>
-				<div class="bottom-checkout">
-					<button class="btn btn-block btn-dark btn-outline-kana float-right mb-3" type="submit">Next</button>
-					<button class="btn btn-block btn-outline-dark btn-outline float-left mt-0">Prev</button>
-				</div>
-			  </form>
-	
-		</main> <!-- col.// -->
-		<aside class="col-md-4 order-1 order-md-2">
-			
-			<div class="card order-summary">
-				<div class="card-header">
-					Order Summary
-				  </div>
-				<div class="card-body">
-					<dl class="dlist-align">
-						<dt>Jumlah Produk</dt>
-						<dd class="text-right">5</dd>
-					</dl>
-					<dl class="dlist-align">
-						<dt>Total Berat</dt>
-						<dd class="text-right">100Kg</dd>
-					</dl>
-					<hr>
-					<dl class="dlist-align">
-						<dt>Sub Total</dt>
-						<dd class="text-right">Rp. 11,799,000</dd>
-					</dl>
-					<dl class="dlist-align">
-						<dt>PPn</dt>
-						<dd class="text-right">Rp. 10,000</dd>
-					</dl>
-					<dl class="dlist-align">
-						<dt>Promo Code<br>
-							(PROMOBIGSALE111)</dt>
-						<dd class="text-right">(Rp. 15,000) <button class="btn text-danger align-baseline pr-0">x</button></dd>
-					</dl>
-					<hr>
-					<dl class="dlist-align">
-						<dt class="font-weight-bold">Total Pembayaran</dt>
-						<dd class="text-right font-weight-bold">Rp. 11,799,000</dd>
-					</dl>
-						
-				</div> <!-- card-body.// -->
-			</div>  <!-- card .// -->
-		</aside> <!-- col.// -->
+				<button class="btn btn-block btn-dark btn-outline-kana" type="submit">Simpan</button>
+			</form>
+		</div>
 	</div>
 </div>
 
