@@ -804,28 +804,28 @@
     border-radius: 0;
 }
 
-.home-kana .card-highlight .card-img-overlay {
+.home-kana .card-highlight .card-img-overlay, .blog-home .card-highlight .card-img-overlay {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
 }
 
-.home-kana .card-highlight .card-img-overlay h5.card-title {
+.home-kana .card-highlight .card-img-overlay h5.card-title, .blog-home .card-highlight .card-img-overlay h5.card-title {
     font-size: 28px;
     font-weight: 300;
     padding: 0 45px;
 }
 
-.home-kana .card-highlight .card-img-overlay .btn {
+.home-kana .card-highlight .card-img-overlay .btn, .blog-home .card-highlight .card-img-overlay .btn {
     font-size: 12px;
 }
 
-.home-kana .card-highlight.overlay-gradient:before {
+.home-kana .card-highlight.overlay-gradient:before, .blog-home .card-highlight.overlay-gradient:before {
     background: #2b2b2b;
     transition: none;
 }
 
-.home-kana .card-highlight.overlay-gradient:hover:before {
+.home-kana .card-highlight.overlay-gradient:hover:before, .blog-home .card-highlight.overlay-gradient:hover:before {
     opacity: 0.6;
 }
 
@@ -901,15 +901,15 @@
         width: 80%;
     }
 
-    .home-kana .bottom-banner h5 {
+    .home-kana .bottom-banner h5, .blog-home .bottom-banner h5 {
         padding: 0;
     }
 
-    .home-kana .bottom-banner p {
+    .home-kana .bottom-banner p, .blog-home .bottom-banner p {
         width: 100% !important;
     }
 
-    .home-kana .card-highlight .card-img-overlay {
+    .home-kana .card-highlight .card-img-overlay, .blog-home .card-highlight .card-img-overlay {
         top: 40%;
     }
 }
@@ -1496,6 +1496,151 @@
 }
 
 /* Pagination -- END */
+
+/* Blog Home -- START */
+
+.blog-home .bottom-banner form {
+    justify-content: center;
+}
+
+.blog-home .bottom-banner form .form-group {
+    margin: 5px;
+}
+
+.blog-home .bottom-banner form .form-group input {
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #a0a0a0;
+    padding: 15px 25px;
+    height: 42px;
+}
+
+@media only screen and (max-width: 719px) {
+    .blog-home .bottom-banner .card-highlight .card-img-overlay h5.card-title {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .blog-home .bottom-banner p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.latest-article h2 {
+    font-weight: 300;
+    font-size: 26px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+.blog-card img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.blog-card .date {
+    font-weight: normal;
+    font-size: 14px;
+    color: #909090;
+}
+
+.blog-card h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #2b2b2b;
+    max-height: 64px;
+    display: -webkit-box;   
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;     
+    overflow: hidden;
+}
+
+.blog-card p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #2b2b2b;
+    max-height: 60px;
+    display: -webkit-box;   
+    -webkit-line-clamp: 3;   
+    -webkit-box-orient: vertical;     
+    overflow: hidden;
+}
+
+#blog-carousel {
+    height: 450px;
+}
+
+#blog-carousel .carousel-inner, #blog-carousel .carousel-inner .carousel-item, #blog-carousel .carousel-inner .carousel-item .row {
+    height: 100%;
+}
+
+#blog-carousel .slide-img {
+    height: 100%;
+    width: 100%;
+}
+
+#blog-carousel .carousel-caption {
+    text-align: left;
+    color: #2b2b2b;
+    left: 5%;
+    right: 25%;
+}
+
+#blog-carousel .carousel-caption h2 a {
+    font-weight: 600;
+    font-size: 36px;
+    color: #2b2b2b;
+}
+
+#blog-carousel .carousel-caption p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#blog-carousel .carousel-caption .tags .tag-item {
+    background: #2B2B2B;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+@media only screen and (max-width: 719px) {
+
+    #blog-carousel .slide-img {
+        height: 50%;
+    }
+
+    #blog-carousel .carousel-caption {
+        bottom: 25%;
+        right: 6%;
+        left: 6%;
+    }
+
+    #blog-carousel .carousel-caption h2 {
+        line-height: 25px;
+    }
+
+    #blog-carousel .carousel-caption h2 a {
+        font-size: 24px;
+    }
+
+    #blog-carousel .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+/* Blog Home -- END */
 
 /* Login Register Modal -- START */
 
