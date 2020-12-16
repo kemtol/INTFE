@@ -1499,6 +1499,13 @@
 
 /* Blog Home -- START */
 
+.blog-home .h3 {
+    font-weight: 300;
+    font-size: 26px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
 .blog-home .bottom-banner form {
     justify-content: center;
 }
@@ -1529,6 +1536,10 @@
     .blog-home .bottom-banner p {
         font-size: 14px;
         font-weight: 300;
+    }
+
+    .scrolling-wrapper .blog-card h3, .scrolling-wrapper .blog-card p {
+        white-space: initial;
     }
 }
 
@@ -1677,6 +1688,71 @@
 }
 
 /* Blog Home -- END */
+
+/* Blog Content -- START */
+
+.blog-content .top-content {
+    padding: 15px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.blog-content .top-content .share-social {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.blog-content .top-content .share-social li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.blog-content .top-content .share-social li a {
+    color: #2b2b2b;
+    font-size: 14px;
+}
+
+.blog-content .title-meta {
+    padding: 15px 0;
+}
+
+.blog-content .title-meta h2 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #2b2b2b;
+}
+
+.blog-content .title-meta span {
+    font-weight: 200;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+@media only screen and (max-width: 719px) {
+    .blog-content .top-content {
+        text-align: center;
+    }
+
+    .blog-content .top-content .share-social li a {
+        font-size: 18px;
+    }
+
+    .blog-content .title-meta {
+        padding: 5px 0;
+    }
+    
+    .blog-content .title-meta h2 {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    
+    .blog-content .title-meta span {
+        font-size: 14px;
+    }
+}
+
+/* Blog Content -- END */
 
 /* Login Register Modal -- START */
 
