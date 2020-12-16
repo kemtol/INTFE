@@ -1532,11 +1532,21 @@
     }
 }
 
-.latest-article h2 {
+.latest-article h2, .list-article h2 {
     font-weight: 300;
     font-size: 26px;
     text-align: center;
     color: #2b2b2b;
+}
+
+.top-banner {
+    background: #F1F1F1;
+    box-shadow: 0px 1px 0px #E4E4E4;
+    padding: 30px 0;
+}
+
+.top-banner button {
+    width: auto;
 }
 
 .blog-card img {
@@ -1659,6 +1669,10 @@
 
     #blog-carousel .carousel-caption p {
         font-size: 14px;
+    }
+
+    .top-banner button {
+        width: 100%;
     }
 }
 
