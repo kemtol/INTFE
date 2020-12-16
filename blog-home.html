@@ -536,13 +536,13 @@ $(document).ready(function() {
 					</div>
 				</div>				
 			</div>
-			<!-- <div class="carousel-item">
+			<div class="carousel-item">
 				<div class="row">
 					<div class="col-12 col-md-8">
 						<img class="d-block slide-img w-100" src="images/main-banner.png" alt="First slide">
 					</div>
 					<div class="col-12 col-md-4">
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption">
 							<div class="icontext mb-3">
 								<span class="icon icon-xs rounded-circle bg-primary">
 									<i class="fa fa-user white"></i>
@@ -568,7 +568,7 @@ $(document).ready(function() {
 						<img class="d-block slide-img w-100" src="images/main-banner.png" alt="First slide">
 					</div>
 					<div class="col-12 col-md-4">
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption">
 							<div class="icontext mb-3">
 								<span class="icon icon-xs rounded-circle bg-primary">
 									<i class="fa fa-user white"></i>
@@ -587,16 +587,20 @@ $(document).ready(function() {
 						</div>
 					</div>
 				</div>				
-			</div> -->
+			</div>
 		</div>
-		<a class="carousel-control-prev" href="#blog-carousel" role="button" data-slide="prev">
+		<div class="control-custom">
+			<a href="#blog-carousel" class="prev mr-5" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+			<a href="#blog-carousel" class="next" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+		</div>
+		<!-- <a class="carousel-control-prev" href="#blog-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
 		<a class="carousel-control-next" href="#blog-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
-		</a>
+		</a> -->
 	</div>
 
 	<div class="container latest-article py-5">
