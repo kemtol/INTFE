@@ -1696,19 +1696,19 @@
     border-bottom: 1px solid #d8d8d8;
 }
 
-.blog-content .top-content .share-social {
+.blog-content .top-content .share-social, .blog-content .bottom-content .share-social {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
     display: inline-block;
 }
 
-.blog-content .top-content .share-social li {
+.blog-content .top-content .share-social li, .blog-content .bottom-content .share-social li {
     display: inline-block;
     margin: 5px;
 }
 
-.blog-content .top-content .share-social li a {
+.blog-content .top-content .share-social li a, .blog-content .bottom-content .share-social li a {
     color: #2b2b2b;
     font-size: 14px;
 }
@@ -1729,12 +1729,53 @@
     color: #2b2b2b;
 }
 
+.blog-content .tags-section .text {
+    font-weight: normal;
+    font-size: 13px;
+    color: #2b2b2b;
+}
+
+.blog-content .tags-section .tags .tag-item {
+    background: #2B2B2B;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    margin: 10px 5px;
+}
+
+.blog-content .author-info {
+    background: #fafafa;
+    border-radius: 0;
+    border: none;
+    padding: 30px 150px;
+    color: #2b2b2b;
+}
+
+.blog-content .author-info h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.blog-content .author-info .author-desc {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.blog-content .author-info .author-quote {
+    font-weight: 200;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 719px) {
     .blog-content .top-content {
         text-align: center;
     }
 
-    .blog-content .top-content .share-social li a {
+    .blog-content .top-content .share-social li a, .bottom-content .share-social li a {
         font-size: 18px;
     }
 
@@ -1749,6 +1790,10 @@
     
     .blog-content .title-meta span {
         font-size: 14px;
+    }
+
+    .blog-content .author-info {
+        padding: 30px;
     }
 }
 
