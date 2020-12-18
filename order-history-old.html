@@ -486,88 +486,73 @@ $(document).ready(function() {
 			</ul>
 		</div>
 		<div class="col-12 col-md-9">
-			<h2 class="mb-4 pt-2">Select Items To Return</h2>
-			<form>
-				<div class="order-box mb-4">
-					<div class="order-header">
+			<h2 class="d-inline-block mb-4 pt-2">Order Details</h2>
+			<select class="mr-3 form-control sort-products d-inline-block float-right w-auto">
+				<option>All Transactions</option>
+				<option>Recent</option>
+			</select>
+			<div class="order-box mb-4">
+				<div class="order-header">
+					<div class="row">
+						<div class="col-6 col-md-2">
+							#ORD001
+						</div>
+						<div class="col-md-7 d-none d-md-block">
+						</div>
+						<div class="col-6 col-md-3 d-block d-md-none text-right">
+							<p><i class="far fa-clock"></i> 24 Hours Remaining</p>
+						</div>
+					</div>
+				</div>
+				<div class="order-item-box">
+					<div class="order-item py-4">
 						<div class="row">
-							<div class="col-6 col-md-2">
-								#ORD001
+							<div class="col-12 col-md-6 order-2 order-md-1">
+								<div class="row item mb-5">
+									<div class="col-4 col-md-6">
+										<img src="images/product-1.png" class="w-100" />
+									</div>
+									<div class="col-8 col-md-6">
+										<h3>Arato Japanese Style</h3>
+										<p class="category">Bookcases & Display Cases</p>
+										<p>Size: <b>21</b></p>
+										<p>Color: <b>Red Maroon</b></p>
+										<p>Quantity: <b>1</b></p>
+										<p><b>Order Arrived</b></p>
+										<p>21 October 2020</p>
+									</div>
+								</div>
+								<div class="row item mb-5">
+									<div class="col-4 col-md-6">
+										<img src="images/product-1.png" class="w-100" />
+									</div>
+									<div class="col-8 col-md-6">
+										<h3>Arato Japanese Style</h3>
+										<p class="category">Bookcases & Display Cases</p>
+										<p>Size: <b>21</b></p>
+										<p>Color: <b>Red Maroon</b></p>
+										<p>Quantity: <b>1</b></p>
+										<p><b>Order Arrived</b></p>
+										<p>21 October 2020</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-3 order-1 order-md-2 mb-3">
+								<p>Status: <b>Order Complete</b></p>
+								<p><b>Alamat Lengkap</b></p>
+								<p>Griya Bandung Asri (West GBA), Gba barat, Blk. G2 No.2
+									Lengkong, Bandung, Jawa Barat.</p>
+							</div>
+							<div class="col-12 col-md-3 action-wrapper order-3">
+								<p><b>Total Tagihan</b></p>
+								<p class="price">Rp. 1,200,000</p>
+								<div class="button-action">
+									<button class="btn btn-block btn-dark btn-outline-kana">Return Item</button>
+									<button class="btn btn-block btn-outline-dark btn-outline">Give Reviews</button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="order-item-box return-item">
-						<div class="order-item py-4">
-							<label class="custom-control custom-checkbox">
-								<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
-								<div class="custom-control-label">
-									<div class="row">
-										<div class="col-12 col-md-9">
-											<div class="row item mb-5">
-												<div class="col-6 col-md-3">
-													<img src="images/product-1.png" class="w-100" />
-												</div>
-												<div class="col-6 col-md-9">
-													<div class="row mb-4">
-														<div class="col-12 col-md-6">
-															<h3>Arato Japanese Style</h3>
-															<p class="category">Bookcases & Display Cases</p>
-															<p><b>Delivery Estimation</b> <span class="text-warning">5 Working Days</span></p>
-															<p><i class="far fa-clock"></i> 24 Hours Remaining</p>
-														</div>
-														<div class="col-12 col-md-6 mt-3 mt-md-0">
-															<p>Size: <b>21</b></p>
-															<p>Color: <b>Red Maroon</b></p>
-															<p>Quantity: <b>1</b></p>
-															<p class="price">Rp. 1,200,000</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</label>
-							<label class="custom-control custom-checkbox">
-								<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
-								<div class="custom-control-label">
-									<div class="row">
-										<div class="col-12 col-md-9">
-											<div class="row item mb-5">
-												<div class="col-6 col-md-3">
-													<img src="images/product-1.png" class="w-100" />
-												</div>
-												<div class="col-6 col-md-9">
-													<div class="row mb-4">
-														<div class="col-12 col-md-6">
-															<h3>Arato Japanese Style</h3>
-															<p class="category">Bookcases & Display Cases</p>
-															<p><b>Delivery Estimation</b> <span class="text-warning">5 Working Days</span></p>
-															<p><i class="far fa-clock"></i> 24 Hours Remaining</p>
-														</div>
-														<div class="col-12 col-md-6 mt-3 mt-md-0">
-															<p>Size: <b>21</b></p>
-															<p>Color: <b>Red Maroon</b></p>
-															<p>Quantity: <b>1</b></p>
-															<p class="price">Rp. 1,200,000</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</label>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="row justify-content-end">
-				<div class="col-12 col-md-3">
-					<button class="btn btn-block btn-outline-dark btn-outline mb-3">Back</button>
-				</div>
-				<div class="col-12 col-md-3">
-					<button class="btn btn-block btn-dark btn-outline-kana">Next</button>
 				</div>
 			</div>
 		</div>

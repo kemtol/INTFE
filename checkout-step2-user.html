@@ -515,11 +515,6 @@ $(document).ready(function() {
 						Nomor Telpon yang Dimasukkan Tidak lengkap
 					</div>
 				</div>
-				<h3 class="mt-4 mb-2">Shipping Detail</h3>
-				<label class="custom-control custom-checkbox check-same-address my-3">
-					<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
-					<div class="custom-control-label">Same As Billing Address </div>
-				  </label>
 				<label>Pilih Alamat</label>
 				<article class="accordion mb-3" id="accordion_pay">
 					<div class="card">
@@ -646,6 +641,71 @@ $(document).ready(function() {
 						<button class="btn btn-block btn-dark btn-outline-kana">Tambah Alamat Baru</button>
 					</div>
 				</article>
+				<h3 class="mt-4 mb-2">Shipping Detail</h3>
+				<label class="custom-control custom-checkbox check-same-address my-3">
+					<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
+					<div class="custom-control-label">Same As Billing Address </div>
+				</label>
+				<div class="form-group">
+					<label for="shippingName">Nama Lengkap</label>
+					<input type="text" class="form-control" id="shippingName" placeholder="Nama Lengkap">
+					<div class="invalid-feedback">
+						Nama belum dimasukkan
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="shippingAddress">Nomor Telepon</label>
+					<input type="tel" class="form-control" id="shippingAddress" placeholder="Nomer Telepon">
+					<div class="invalid-feedback">
+						Nomor Telpon yang Dimasukkan Tidak lengkap
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="alamatLengkap">Alamat Lengkap</label>
+					<input type="text" class="form-control" id="alamatLengkap" placeholder="Alamat Lengkap" required>
+					<div class="invalid-feedback">
+						Alamat belum dimasukkan
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-12 col-md-6 mb-3">
+						<label for="shippingProvince">Provinsi</label>
+						<select class="form-control">
+							<option>Jawa Barat</option>
+							<option>DKI Jakarta</option>
+						</select>
+						<div class="invalid-feedback">
+							Provinsi belum dipilih
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<label for="shippingCity">Kota / Kabupaten</label>
+						<select class="form-control">
+							<option>Bandung</option>
+							<option>Cirebon</option>
+						</select>
+						<div class="invalid-feedback">
+							Kota / Kabupaten belum dipilih
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<label for="shippingRegion">Kecamatan</label>
+						<select class="form-control">
+							<option>Tanah Sareal</option>
+							<option>Cimahpar</option>
+						</select>
+						<div class="invalid-feedback">
+							Kecamatan belum dipilih
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<label for="shippingPostalCode">Kode POS</label>
+						<input type="number" class="form-control" id="shippingPostalCode" placeholder="123456" required>
+						<div class="invalid-feedback">
+							Kode POS belum dimasukkan
+						</div>
+					</div>
+				</div>
 				<div class="form-row">
 					<div class="col-12 col-md-6 mb-3">
 						<label for="tanggalPengantaran">Tanggal Pengantaran</label>
