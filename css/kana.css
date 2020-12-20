@@ -775,6 +775,7 @@
 #mainCarousel .carousel-caption {
     left: 10%;
     top: 20%;
+    width: 80%;
 }
 
 #mainCarousel .carousel-caption h2 {
@@ -815,6 +816,7 @@
     font-size: 28px;
     font-weight: 300;
     padding: 0 45px;
+    color: white;
 }
 
 .home-kana .card-highlight .card-img-overlay .btn, .blog-home .card-highlight .card-img-overlay .btn {
@@ -875,6 +877,10 @@
 }
 
 @media only screen and (max-width: 719px) {
+    #mainCarousel .carousel-caption {
+        width: initial;
+    }
+
     #mainCarousel, #mainCarousel .carousel-item img {
         height: 200px;
     }
@@ -889,8 +895,9 @@
     }
 
     #mainCarousel .carousel-item .carousel-caption .btn-fill-light {
-        width: 120%;
+        width: 200%;
         position: absolute;
+        font-size: 11px;
     }
 
     .home-kana .bottom-right-wrapper .bottom-right-content {
