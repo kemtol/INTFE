@@ -1175,33 +1175,33 @@
     background: #2b2b2b;
 }
 
-.product-list .filter-list .colors .color-wrap {
+.product-list .filter-list .colors .color-wrap, .filter-category-navbar .color-wrap {
     cursor: pointer;
     display: inline-block;
     margin: 2px 5px;
 }
 
-.product-list .filter-list .colors .color-wrap.big {
+.product-list .filter-list .colors .color-wrap.big, .filter-category-navbar .color-wrap.big {
     height: 40px;
     width: 40px;
     padding: 4px;
 }
 
-.product-list .filter-list .colors .color-wrap.big .color-item {
+.product-list .filter-list .colors .color-wrap.big .color-item, .filter-category-navbar .color-wrap.big .color-item {
     height: 30px;
     width: 30px;
 }
 
-.product-list .filter-list .colors .color-wrap img {
+.product-list .filter-list .colors .color-wrap img, .filter-category-navbar .color-wrap img {
     padding: 3px;
     border-radius: 100%;
 }
 
-.product-list .filter-list .colors .color-wrap.active img {
+.product-list .filter-list .colors .color-wrap.active img, .filter-category-navbar .color-wrap.active img {
     border: 1px solid #2b2b2b;
 }
 
-.product-list .filter-list .colors .color-wrap.big.active {
+.product-list .filter-list .colors .color-wrap.big.active, .filter-category-navbar .color-wrap.big.active {
     border: 1px solid #2b2b2b;
     border-radius: 100%;
 }
@@ -2108,5 +2108,33 @@
 }
 
 /* Footer -- END */
+
+/* Filter Mobile -- START */
+
+.filter-category-navbar .head-navbar, .filter-category-navbar .subheader-navbar {
+    padding: 15px 0;
+    color: #2b2b2b;
+    font-size: 16px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.filter-category-navbar .subheader-navbar {
+    font-size: 14px;
+}
+
+.filter-category-navbar .filter-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.filter-category-navbar .filter-list li, .filter-category-navbar .filter-list li a {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #2b2b2b;
+}
+
+/* Filter Mobile -- END */
 
 /* kana's override css -- END */

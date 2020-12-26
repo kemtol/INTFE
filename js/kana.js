@@ -10,6 +10,29 @@ function bodyCssChange() {
 }
 // Dropdown hamburger button.
 
+// Filter Category Navigation
+function closeNavbar() {
+  $('.filter-category-navbar').removeClass('show');
+  $('body').css({'overflow':'auto'});
+
+  $('.level-one').removeClass('d-none');
+  $('.level-two').addClass('d-none');
+  $('.subheader-navbar').addClass('d-none');
+}
+
+function nextLevel() {
+  $('.level-one').addClass('d-none');
+  $('.level-two').removeClass('d-none');
+  $('.subheader-navbar').removeClass('d-none');
+}
+
+function backPrevLevel() {
+  $('.level-one').removeClass('d-none');
+  $('.level-two').addClass('d-none');
+  $('.subheader-navbar').addClass('d-none');
+}
+// Filter Category Navigation.
+
 // Validation form
 window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
