@@ -333,150 +333,152 @@ $(document).ready(function() {
 							</ul>
 						</div> <!-- collapse .// -->
 
-						<!-- filter navbar -->
-						<div class="collapse navbar-collapse filter-category-navbar" id="categoryNavbar">
-							<div class="head-navbar" onClick="closeNavbar()">
-								<i class="fa fa-times mr-3"></i> Select Categories
-							</div>
-							<div class="subheader-navbar d-none" onClick="backPrevLevel()">
-								<i class="fa fa-angle-left mr-3"></i> Living Room Furnitures
-							</div>
-							<ul class="level-one filter-list">
-								<li onClick="nextLevel()">Living Room Furnitures</li>
-								<li onClick="nextLevel()">Bedroom Furnitures</li>
-								<li onClick="nextLevel()">Dining Room & Kitchen Furnitures</li>
-								<li onClick="nextLevel()">Entryway Furnitures</li>
-								<li onClick="nextLevel()">Storage Furnitures</li>
-							</ul>
-							<ul class="level-two filter-list d-none">
-								<li><a href="#">Sofas & Recliners</a></li>
-								<li><a href="#">Coffee Tables</a></li>
-								<li><a href="#">Slide Tables</a></li>
-							</ul>
-						</div>
-
-						<!-- filter navbar -->
-						<div class="collapse navbar-collapse filter-category-navbar" id="filterNavbar">
-							<div class="head-navbar" onClick="closeNavbar()">
-								<i class="fa fa-times mr-3"></i> Select Filter
-							</div>
-							<div class="subheader-navbar d-none" onClick="backPrevLevel()">
-								<i class="fa fa-angle-left mr-3"></i> Living Room Furnitures
-							</div>
-							<ul class="level-one filter-list">
-								<li onClick="nextLevel()">Product Type</li>
-								<li onClick="nextLevel()">Pricing</li>
-								<li onClick="nextLevel()">Color</li>
-							</ul>
-							<ul class="level-two filter-list d-none">
-								<div class="filter-content" style="">
-									<div class="card-body">
-										<label class="custom-control custom-checkbox">
-											<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
-											<div class="custom-control-label">Sectional Sofas </div>
-										</label>
-								
-										<label class="custom-control custom-checkbox">
-											<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
-											<div class="custom-control-label">1 Seater Sofas </div>
-										</label>
-								
-										<label class="custom-control custom-checkbox">
-											<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
-											<div class="custom-control-label">3 Seater Sofas</div>
-										</label>
-								
-										<label class="custom-control custom-checkbox">
-											<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
-											<div class="custom-control-label">Accent Chairs </div>
-										</label>
-									</div> <!-- card-body.// -->
+						<div class="d-md-none">
+							<!-- filter navbar -->
+							<div class="collapse navbar-collapse filter-category-navbar d-md-none" id="categoryNavbar">
+								<div class="head-navbar" onClick="closeNavbar()">
+									<i class="fa fa-times mr-3"></i> Select Categories
 								</div>
+								<div class="subheader-navbar d-none" onClick="backPrevLevel()">
+									<i class="fa fa-angle-left mr-3"></i> Living Room Furnitures
+								</div>
+								<ul class="level-one filter-list">
+									<li onClick="nextLevel()">Living Room Furnitures</li>
+									<li onClick="nextLevel()">Bedroom Furnitures</li>
+									<li onClick="nextLevel()">Dining Room & Kitchen Furnitures</li>
+									<li onClick="nextLevel()">Entryway Furnitures</li>
+									<li onClick="nextLevel()">Storage Furnitures</li>
+								</ul>
+								<ul class="level-two filter-list d-none">
+									<li><a href="#">Sofas & Recliners</a></li>
+									<li><a href="#">Coffee Tables</a></li>
+									<li><a href="#">Slide Tables</a></li>
+								</ul>
+							</div>
 
-								<div class="filter-content">
-									<div class="card-body">
-									  <label class="checkbox-btn">
-										<input type="checkbox">
-										<span class="btn btn-light"> $ </span>
-									  </label>
-						
-									  <label class="checkbox-btn">
-										<input type="checkbox">
-										<span class="btn btn-light"> $$ </span>
-									  </label>
-						
-									  <label class="checkbox-btn">
-										<input type="checkbox">
-										<span class="btn btn-light"> $$$ </span>
-									  </label>
-								</div><!-- card-body.// -->
+							<!-- filter navbar -->
+							<div class="collapse navbar-collapse filter-category-navbar d-md-none" id="filterNavbar">
+								<div class="head-navbar" onClick="closeNavbar()">
+									<i class="fa fa-times mr-3"></i> Select Filter
+								</div>
+								<div class="subheader-navbar d-none" onClick="backPrevLevel()">
+									<i class="fa fa-angle-left mr-3"></i> Living Room Furnitures
+								</div>
+								<ul class="level-one filter-list">
+									<li onClick="nextLevel()">Product Type</li>
+									<li onClick="nextLevel()">Pricing</li>
+									<li onClick="nextLevel()">Color</li>
+								</ul>
+								<ul class="level-two filter-list d-none">
+									<div class="filter-content" style="">
+										<div class="card-body">
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" name="myfilter_checkbox" checked="" class="custom-control-input">
+												<div class="custom-control-label">Sectional Sofas </div>
+											</label>
+									
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
+												<div class="custom-control-label">1 Seater Sofas </div>
+											</label>
+									
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
+												<div class="custom-control-label">3 Seater Sofas</div>
+											</label>
+									
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" name="myfilter_checkbox" class="custom-control-input">
+												<div class="custom-control-label">Accent Chairs </div>
+											</label>
+										</div> <!-- card-body.// -->
+									</div>
 
-								<div class="filter-content">
-									<div class="card-body">
-										<div class="row">
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle border" style="background: #ffffff;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #d3d3d3;"></div>
-											</div>
-										
-											<div class="color-wrap big active">
-												<div class="color-item rounded-circle" style="background: #2b2b2b;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #c0c0c0;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #ffa500;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #eaeaea;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #c2a88f;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #8b4513;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #c290c2;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #c2c291;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #ffc0cb;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #e23030;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #90c590;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #9292c9;"></div>
-											</div>
-										
-											<div class="color-wrap big">
-												<div class="color-item rounded-circle" style="background: #e0e023;"></div>
-											</div>
-										</div>
+									<div class="filter-content">
+										<div class="card-body">
+										<label class="checkbox-btn">
+											<input type="checkbox">
+											<span class="btn btn-light"> $ </span>
+										</label>
+							
+										<label class="checkbox-btn">
+											<input type="checkbox">
+											<span class="btn btn-light"> $$ </span>
+										</label>
+							
+										<label class="checkbox-btn">
+											<input type="checkbox">
+											<span class="btn btn-light"> $$$ </span>
+										</label>
 									</div><!-- card-body.// -->
-								</div>
-							</ul>
+
+									<div class="filter-content">
+										<div class="card-body">
+											<div class="row">
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle border" style="background: #ffffff;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #d3d3d3;"></div>
+												</div>
+											
+												<div class="color-wrap big active">
+													<div class="color-item rounded-circle" style="background: #2b2b2b;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #c0c0c0;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #ffa500;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #eaeaea;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #c2a88f;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #8b4513;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #c290c2;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #c2c291;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #ffc0cb;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #e23030;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #90c590;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #9292c9;"></div>
+												</div>
+											
+												<div class="color-wrap big">
+													<div class="color-item rounded-circle" style="background: #e0e023;"></div>
+												</div>
+											</div>
+										</div><!-- card-body.// -->
+									</div>
+								</ul>
+							</div>
 						</div>
 					</div> <!-- container .// -->
 				</nav>
