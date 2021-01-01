@@ -512,7 +512,7 @@ $(document).ready(function() {
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap border-0 rounded-0">
 								<!-- <a href="#"> <img src="images/product-detail.png"></a> -->
-								<div class="img-big-content w-100" style="background-image: url(images/product-detail.png)"></div>
+								<div class="img-big-content w-100" data-toggle="modal" data-target="#imgZoom" data-value="images/product-detail.png" style="background-image: url(images/product-detail.png)"></div>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
 								<a href="#" class="item-thumb border-0 rounded-0" data-value="images/product-2.png"> <img src="images/product-2.png"></a>
@@ -522,6 +522,22 @@ $(document).ready(function() {
 							</div> <!-- thumbs-wrap .// -->
 						</article> <!-- gallery-wrap .end// -->
 				</aside>
+				<div class="modal fade" id="imgZoom" tabindex="-1" role="dialog" aria-labelledby="imgZoom" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="container">
+									<img src="images/product-detail.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<main class="col-md-5">
 					<article>
 						<div class="flash-time mb-3">

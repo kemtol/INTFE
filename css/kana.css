@@ -2148,6 +2148,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .gallery-wrap .thumbs-wrap .item-thumb img {
@@ -2159,6 +2160,28 @@
         height: 250px;
     }
 }
+
+/* @media only screen and (min-width: 720px) { */
+    #imgZoom .modal-dialog {
+        width: 90%;
+        max-width: none;
+        height: 95%;
+        margin: auto;
+        padding-top: 25px;
+    }
+    
+    #imgZoom .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+      
+    #imgZoom .modal-body {
+        overflow-y: auto;
+    }
+    
+/* } */
 
 /* Image Gallery -- END */
 

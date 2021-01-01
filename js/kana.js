@@ -110,8 +110,15 @@ $(document).ready(function() {
     let selectedImage = $(this).attr('data-value');
     
     $('.gallery-wrap .img-big-wrap .img-big-content').css('background-image', 'url(' + selectedImage + ')');
+    $('.gallery-wrap .img-big-wrap .img-big-content').attr('data-value', selectedImage);
     $('.gallery-wrap .img-big-wrap .img-big-content').css('transform', 'unset');
     $('.gallery-wrap .img-big-wrap .img-big-content').css('transition', 'all 0.3s');
+  })
+
+  $('.gallery-wrap .img-big-wrap .img-big-content').click(function() {
+    let selectedImage = $(this).attr('data-value');
+
+    $('#imgZoom img').attr('src', selectedImage);
   })
 
   //  gallery wrapper.
