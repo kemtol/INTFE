@@ -401,6 +401,32 @@
     left: 0;
 }
 
+.shipping-method-container {
+    background: #FAFAFA;
+    border: 0.5px solid #D8D8D8;
+    padding: 0px 20px;
+}
+
+.shipping-method-container .form-check {
+    padding: 15px 0;
+    border-bottom: 0.5px solid #D8D8D8;
+    padding-left: 30px;
+}
+
+.shipping-method-container .form-check:last-child {
+    border-bottom: none;
+}
+
+.shipping-method-container .form-check span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.shipping-method-container .form-check i {
+    font-size: 12px;
+    cursor: pointer;
+}
+
 /* Checkout -- END */
 
 /* Status Box -- START */
