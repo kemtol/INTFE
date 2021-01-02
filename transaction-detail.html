@@ -654,7 +654,7 @@ $(document).ready(function() {
 							</div>
 							<div class="col-12 col-md-3 action-wrapper">
 								<div class="button-action">
-									<button class="btn btn-block btn-outline-dark btn-outline">Track Orders</button>
+									<button class="btn btn-block btn-outline-dark btn-outline" data-toggle="modal" data-target="#trackingOrderModal">Track Orders</button>
 								</div>
 							</div>
 						</div>
@@ -663,6 +663,50 @@ $(document).ready(function() {
 			</div>
 			<div class="col-12 col-md-8 m-auto mt-3">
 				<button class="btn btn-block btn-dark btn-outline-kana">Confirm Payment</button>
+			</div>
+			<div class="modal fade" id="trackingOrderModal" tabindex="-1" role="dialog" aria-labelledby="trackingOrderModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<p>Tracking ID JNE794100197617729536</p>
+						</div>
+						<div class="modal-body">
+							<div class="row container">
+								<div class="col-12 col-md-8 py-3 m-auto">
+									<div class="row text-center">
+										<div class="tracking-wrapper">
+											<ul class="progressbar">
+												<li class="active"><span>Packing</span></li>
+												<li class="active"><span>Delivery</span></li>
+												<li><span>Received</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="delivery-status">
+										<h5>Delivery Status</h5>
+										<ul>
+											<li>
+												<p class="status-title">Order Delivered</p>
+												<p class="status-time">31 Des 20, 14:10</p>
+											</li>
+											<li>
+												<p class="status-title">Order In Transit</p>
+												<p class="status-time">31 Des 20, 14:10</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="row container">
+								<div class="col-12 col-md-5 m-auto">
+									<button class="btn btn-block btn-dark btn-outline-kana" data-dismiss="modal" aria-label="Close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

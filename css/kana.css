@@ -2211,4 +2211,98 @@
 
 /* Image Gallery -- END */
 
+/* Tracking Order Modal -- START */
+
+#trackingOrderModal .modal-header {
+    padding: 15px 30px;
+    background: #2b2b2b;
+}
+
+#trackingOrderModal .modal-header p {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+#trackingOrderModal .progressbar li {
+    width: 33.33%
+}
+
+#trackingOrderModal .modal-footer {
+    border-top: none;
+}
+
+#trackingOrderModal .progressbar li:after {
+    z-index: 0;
+}
+
+#trackingOrderModal .delivery-status {
+    padding: 15px 20px;
+    background: #fafafa;
+}
+
+#trackingOrderModal .delivery-status h5 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+#trackingOrderModal .delivery-status ul {
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+}
+
+#trackingOrderModal .delivery-status ul li {
+    margin-bottom: 15px;
+    position: relative;
+    counter-increment: list;
+}
+
+#trackingOrderModal .delivery-status ul li:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    height: 108%;
+    width: 1px;
+    border-left: 1px dashed #bdbdbd;
+}
+
+#trackingOrderModal .delivery-status ul li:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -29px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+}
+
+#trackingOrderModal .delivery-status ul li:last-child:before {
+    border: none;
+}
+
+#trackingOrderModal .delivery-status ul li p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #2b2b2b;
+    margin-bottom: 0;
+}
+
+#trackingOrderModal .delivery-status ul li p.status-time {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Tracking Order Modal -- END */
+
 /* kana's override css -- END */
