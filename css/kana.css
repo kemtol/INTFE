@@ -1016,6 +1016,17 @@
     font-weight: 300;
 }
 
+.card-product-grid .old-price, .product-card .old-price {
+    text-decoration: line-through;
+}
+
+.card-product-grid .promo-price, .product-card .promo-price {
+    font-weight: normal;
+    font-size: 14px;
+    color: #EA6564;
+    margin-top: 5px;
+}
+
 .product-list .card-product-grid, .product-card {
     border: none;
     padding: 0;
@@ -1291,6 +1302,16 @@
     letter-spacing: -0.01em;
     font-weight: normal;
     color: #2B2B2B;
+}
+
+.product-detail .price.old-price {
+    text-decoration: line-through;
+}
+
+.product-detail .price.promo-price {
+    font-weight: normal;
+    font-size: 19px;
+    color: #EA6564;
 }
 
 .product-detail .btn-outline {
