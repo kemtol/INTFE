@@ -1066,11 +1066,25 @@
     background: white;
 }
 
+.product-card .img-wrap .delete .delete-container {
+    border-radius: 100%;
+    padding: 0px 7px;
+    background: white;
+}
+
 .product-list .card-product-grid .img-wrap .wishlist .wishlist-container:hover, .product-card .img-wrap .wishlist .wishlist-container:hover {
     color: #2b2b2b;
 }
 
+.product-card .img-wrap .delete .delete-container:hover {
+    color: #2b2b2b;
+}
+
 .product-list .card-product-grid .img-wrap .wishlist .wishlist-container i, .product-card .img-wrap .wishlist .wishlist-container i {
+    font-size: 13px;
+}
+
+.product-card .img-wrap .delete .delete-container i {
     font-size: 13px;
 }
 
