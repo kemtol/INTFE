@@ -2340,4 +2340,57 @@
 
 /* Tracking Order Modal -- END */
 
+/* Address List -- START */
+
+.address-list .form-check {
+    border: 0.5px solid #D8D8D8;
+    margin-bottom: 15px;
+}
+
+.address-list .form-check .form-header {
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.address-list .form-check .form-header a {
+    font-weight: 600;
+    font-size: 12px;
+    color: #2b2b2b;
+    display: none;
+}
+
+.address-list .form-check:hover .form-header {
+    background: #FAFAFA;
+}
+
+.address-list .form-check:hover .form-header a {
+    display: block;
+}
+
+.address-list .form-check .form-body {
+    margin-left: -20px;
+    border-top: 0.5px solid #D8D8D8;
+    padding: 15px;
+}
+
+.address-list .form-check .form-body h4 {
+    font-weight: 600;
+    font-size: 12px;
+    color: #2b2b2b;
+}
+
+.address-list .form-check .form-body p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.address-list .form-check .form-body p.address {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Address List -- END */
+
 /* kana's override css -- END */
