@@ -42,7 +42,7 @@
     color: #2b2b2b;
 }
 
-.kana-form input {
+.kana-form input, .kana-form select {
     background: white;
     border: 1px solid #c8c8c8;
     border-radius: 0;
@@ -50,6 +50,10 @@
     color: #2b2b2b;
     font-size: 14px;
     padding: 12px 20px;
+}
+
+.kana-form select {
+    padding: 0 15px;
 }
 
 .kana-form .forgot {
@@ -238,13 +242,13 @@
     background-color: #2b2b2b;
 }
 
-.check-same-address .custom-control-label {
+.check-same-address .custom-control-label, .set-as-primary .custom-control-label {
     font-size: 14px !important;
     color: #2b2b2b !important;
     font-weight: 300 !important;
 }
 
-.check-same-address .custom-control-input:checked ~ .custom-control-label::before {
+.check-same-address .custom-control-input:checked ~ .custom-control-label::before, .set-as-primary .custom-control-input:checked ~ .custom-control-label::before {
     border-color: #2b2b2b;
     background: #2b2b2b;
 }
@@ -2389,6 +2393,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.kana-form .form-container {
+    background: #FAFAFA;
+    border: 0.5px solid #D8D8D8;
+    padding: 15px;
 }
 
 /* Address List -- END */
