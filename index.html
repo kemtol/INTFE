@@ -349,11 +349,20 @@ $(document).ready(function() {
 			</div> <!-- col.// -->
 			<div class="col-lg-2 col-xl-2 col-sm-8 col-md-4 col-4">
 				<div class="d-flex justify-content-end">
-					<div class="widget-header mr-4 d-none d-md-block">
-						<a href="#" data-toggle="modal" data-target="#loginModal">
+					<div class="widget-header mr-4 d-none d-md-block account-dropdown">
+						<div class="icon" id="accountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img src="images/user.png" />
 							<span class="sr-only">Profile actions</span>
-						</a>
+						</div>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountMenu">
+							<ul class="list-group sidebar">
+								<a class="list-group-item" href="#">My Account</a>
+								<a class="list-group-item" href="#"> Wishlist </a>
+								<a class="list-group-item" href="#"> Order Details </a>
+								<a class="list-group-item" href="#"> Address List </a>
+								<a class="list-group-item" href="#"> Sign Out </a>
+							</ul>
+						</div>
 					</div>  <!-- widget-header .// -->
 
 					<div class="widget-header mr-3 cart-dropdown">

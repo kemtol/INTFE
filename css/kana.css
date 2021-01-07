@@ -677,15 +677,25 @@
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
 }
 
-.header-main .cart-dropdown {
+.header-main .cart-dropdown, .header-main .account-dropdown {
     cursor: pointer;
 }
 
-.header-main .cart-dropdown .dropdown-menu {
+.header-main .cart-dropdown .dropdown-menu, .header-main .account-dropdown .dropdown-menu {
     width: 400px;
     top: 28px !important;
     border: none;
     border-radius: 0;
+}
+
+.header-main .account-dropdown .dropdown-menu {
+    width: 300px;
+    padding: 0;
+}
+
+.header-main .account-dropdown .dropdown-menu .list-group-item:hover {
+    font-weight: 600;
+    color: #2b2b2b;
 }
 
 .header-main .cart-dropdown .dropdown-menu .input-spinner {
