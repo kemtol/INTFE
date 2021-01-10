@@ -2413,4 +2413,29 @@
 
 /* Address List -- END */
 
+/* Breadcrumb -- START */
+
+.breadcrumb .breadcrumb-item a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #2b2b2b;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: #6a6a6a;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 2px 8px;
+}
+
+.breadcrumb .breadcrumb-item.active:before {
+    padding-right: 15px;
+}
+
+/* Breadcrumb -- END */
+
 /* kana's override css -- END */
