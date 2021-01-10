@@ -569,8 +569,10 @@
     padding: 8px 15px;
 }
 
-.order-box .order-header .status {
+.order-box .order-header .status, .order-box .order-header .order-id {
     font-size: 12px;
+    top: 25%;
+    position: relative;
 }
 
 .order-box .order-header .price {
