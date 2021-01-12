@@ -2440,4 +2440,32 @@
 
 /* Breadcrumb -- END */
 
+/* Static Page -- START */
+
+.static-page .body-content h2 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #2b2b2b;
+}
+
+.static-page .body-content p {
+    font-weight: normal;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+.static-page .body-content .icon i {
+    font-size: 18px;
+    color: #2b2b2b;
+    vertical-align: bottom;
+}
+
+.static-page .body-content .desc {
+    font-weight: normal;
+    font-size: 18px;
+    color: #828282;
+}
+
+/* Static Page -- END */
+
 /* kana's override css -- END */
