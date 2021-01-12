@@ -688,6 +688,11 @@
     top: 28px !important;
     border: none;
     border-radius: 0;
+    cursor: auto;
+}
+
+.header-main .cart-dropdown .dropdown-menu:hover i, .header-main .cart-dropdown .dropdown-menu:hover i {
+    color: inherit;
 }
 
 .header-main .account-dropdown .dropdown-menu {
@@ -839,38 +844,38 @@
     color: #2b2b2b;
 }
 
-.home-kana .card-highlight {
+.home-kana .card-highlight, .static-page .card-highlight {
     border-radius: 0;
     border: none;
 }
 
-.home-kana .card-highlight .card-img {
+.home-kana .card-highlight .card-img, .static-page .card-highlight .card-img {
     border-radius: 0;
 }
 
-.home-kana .card-highlight .card-img-overlay, .blog-home .card-highlight .card-img-overlay {
+.home-kana .card-highlight .card-img-overlay, .blog-home .card-highlight .card-img-overlay, .static-page .card-highlight .card-img-overlay {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
 }
 
-.home-kana .card-highlight .card-img-overlay h5.card-title, .blog-home .card-highlight .card-img-overlay h5.card-title {
+.home-kana .card-highlight .card-img-overlay h5.card-title, .blog-home .card-highlight .card-img-overlay h5.card-title, .static-page .card-highlight .card-img-overlay h5.card-title {
     font-size: 28px;
     font-weight: 300;
     padding: 0 45px;
     color: white;
 }
 
-.home-kana .card-highlight .card-img-overlay .btn, .blog-home .card-highlight .card-img-overlay .btn {
+.home-kana .card-highlight .card-img-overlay .btn, .blog-home .card-highlight .card-img-overlay .btn, .static-page .card-highlight .card-img-overlay .btn {
     font-size: 12px;
 }
 
-.home-kana .card-highlight.overlay-gradient:before, .blog-home .card-highlight.overlay-gradient:before {
+.home-kana .card-highlight.overlay-gradient:before, .blog-home .card-highlight.overlay-gradient:before, .static-page .card-highlight.card-highlight.overlay-gradient:before {
     background: #2b2b2b;
     transition: none;
 }
 
-.home-kana .card-highlight.overlay-gradient:hover:before, .blog-home .card-highlight.overlay-gradient:hover:before {
+.home-kana .card-highlight.overlay-gradient:hover:before, .blog-home .card-highlight.overlay-gradient:hover:before, .static-page .card-highlight.card-highlight.overlay-gradient:hover:before {
     opacity: 0.6;
 }
 
@@ -2452,6 +2457,7 @@
     font-weight: normal;
     font-size: 18px;
     color: #2b2b2b;
+    margin-bottom: 30px;
 }
 
 .static-page .body-content .icon i {
@@ -2464,6 +2470,13 @@
     font-weight: normal;
     font-size: 18px;
     color: #828282;
+}
+
+.static-page .section-title {
+    font-weight: 300;
+    font-size: 26px;
+    color: #2b2b2b;
+    text-align: center;
 }
 
 /* Static Page -- END */
