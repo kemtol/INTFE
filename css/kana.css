@@ -858,6 +858,10 @@
 
 /* Home - START */
 
+#mainCarousel .carousel-item {
+    height: 400px;
+}
+
 #mainCarousel .carousel-caption {
     left: 10%;
     top: 20%;
@@ -965,6 +969,10 @@
 @media only screen and (max-width: 719px) {
     #mainCarousel .carousel-caption {
         width: initial;
+    }
+
+    #mainCarousel .carousel-item {
+        height: 200px;
     }
 
     #mainCarousel, #mainCarousel .carousel-item img {
