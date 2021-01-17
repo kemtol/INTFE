@@ -997,6 +997,7 @@
     .home-kana .bottom-right-wrapper .bottom-right-content {
         position: relative;
         width: 90%;
+        padding: 30px 15px;
     }
 
     .home-kana .bottom-right-wrapper .bottom-right-content h4 {
@@ -1013,6 +1014,7 @@
 
     .home-kana .card-highlight .card-img-overlay, .blog-home .card-highlight .card-img-overlay {
         top: 40%;
+        padding: 15px;
     }
 }
 
