@@ -808,7 +808,7 @@
 
 @media only screen and (min-width: 720px) {
     .header-main .navbar-main .nav-item .dropdown-menu {
-        top: 130%;
+        top: 127%;
         background: #fff;
         border-radius: 0;
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -2238,6 +2238,11 @@
     border: 1px solid #c4c4c4;
     border-radius: 4px;
     font-size: 12px;
+    width: 85%;
+}
+
+.section-footer .newsletter form {
+    position: relative;
 }
 
 @media only screen and (max-width: 719px) {
@@ -2248,6 +2253,13 @@
 
 .section-footer .footer-bottom a {
     color: #474747;
+}
+
+.section-footer .newsletter .btn-dark {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 11px;
 }
 
 /* Footer -- END */
