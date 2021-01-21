@@ -2350,26 +2350,26 @@
 
 /* Tracking Order Modal -- START */
 
-#trackingOrderModal .modal-header, #myVoucher .modal-header {
+#trackingOrderModal .modal-header, #myVoucher .modal-header, #loyaltyLevel .modal-header {
     padding: 15px 30px;
     background: #2b2b2b;
 }
 
-#trackingOrderModal .modal-header p, #myVoucher .modal-header p {
+#trackingOrderModal .modal-header p, #myVoucher .modal-header p, #loyaltyLevel .modal-header p {
     font-weight: 600;
     font-size: 14px;
     color: white;
 }
 
-#trackingOrderModal .progressbar li {
+#trackingOrderModal .progressbar li, #loyaltyLevel .progressbar li {
     width: 33.33%
 }
 
-#trackingOrderModal .modal-footer {
+#trackingOrderModal .modal-footer, #myVoucher .modal-footer, #loyaltyLevel .modal-footer {
     border-top: none;
 }
 
-#trackingOrderModal .progressbar li:after {
+#trackingOrderModal .progressbar li:after, #loyaltyLevel .progressbar li:after {
     z-index: 0;
 }
 
@@ -2659,42 +2659,42 @@
 
 /* Voucher Card -- END */
 
-/* Loyalti -- START */
+/* Loyalty -- START */
 
-.loyalti-level {
+.loyalty-level {
     background: #f2f2f2;
 }
 
-.loyalti-level .level-name {
+.loyalty-level .level-name {
     font-weight: 600;
     font-size: 18px;
     color: #2b2b2b;
     cursor: pointer;
 }
 
-.loyalti-level .level-name i {
+.loyalty-level .level-name i {
     margin-left: 10px;
 }
 
-.loyalti-level .level-name .current-achievement {
+.loyalty-level .level-name .current-achievement {
     float: right;
 }
 
-.loyalti-level .level-name .current-achievement span {
+.loyalty-level .level-name .current-achievement span {
     color: #828282;
     font-weight: 300;
 }
 
-.loyalti-level .progress {
+.loyalty-level .progress {
     border-radius: 0;
     height: 8px;
 }
 
-.loyalti-level .progress .progress-bar {
+.loyalty-level .progress .progress-bar {
     background-color: #CA8C58;
 }
 
-.loyalti-level p.desc {
+.loyalty-level p.desc {
     font-weight: 300;
     font-size: 12px;
     color: #828282;
@@ -2735,6 +2735,60 @@
     font-weight: 300;
 }
 
-/* Loyalti -- END */
+#loyaltyLevel .progressbar li:before {
+    content: "\2713";
+}
+
+#loyaltyLevel .progressbar li span {
+    position: relative;
+    top: -90px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+#loyaltyLevel .progressbar li p {
+    font-weight: 600;
+    font-size: 12px;
+    color: #828282;
+    position: relative;
+    top: -90px;
+}
+
+#loyaltyLevel .tnc-benefit h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+#loyaltyLevel .tnc-benefit .tnc-benefit-container {
+    background: #fafafa;
+    padding: 15px 15px 15px 0px;
+}
+
+#loyaltyLevel .tnc-benefit .tnc-benefit-container ul {
+    margin-bottom: 0;
+}
+
+#loyaltyLevel .tnc-benefit .tnc-benefit-container ul li {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2b2b2b;
+}
+
+#loyaltyLevel .tnc-benefit .tnc-benefit-container h5:first-child {
+    padding-top: 0;
+}
+
+#loyaltyLevel .tnc-benefit .tnc-benefit-container h5 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2b2b2b;
+    padding: 15px 23px 0px;
+    margin-bottom: 5px;
+}
+
+/* Loyalty -- END */
 
 /* kana's override css -- END */
