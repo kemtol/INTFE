@@ -2149,6 +2149,14 @@
     border-radius: 0;
 }
 
+.order-summary .see-voucher {
+    font-weight: 600;
+    font-size: 12px;
+    color: #CA8C58;
+    float: right;
+    cursor: pointer;
+}
+
 .order-summary .card-header {
     font-weight: normal;
     font-size: 16px;
@@ -2342,12 +2350,12 @@
 
 /* Tracking Order Modal -- START */
 
-#trackingOrderModal .modal-header {
+#trackingOrderModal .modal-header, #myVoucher .modal-header {
     padding: 15px 30px;
     background: #2b2b2b;
 }
 
-#trackingOrderModal .modal-header p {
+#trackingOrderModal .modal-header p, #myVoucher .modal-header p {
     font-weight: 600;
     font-size: 14px;
     color: white;

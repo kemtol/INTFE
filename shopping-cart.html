@@ -624,6 +624,7 @@ $(document).ready(function() {
 				<form class="needs-validation" novalidate>
 					<div class="form-group">
 						<label><b>Have a Promo Code?</b></label>
+						<div class="see-voucher" data-toggle="modal" data-target="#myVoucher">See my voucher</div>
 						<div class="input-group">
 							<input type="text" class="form-control" name="" placeholder="Coupon code">
 							<div class="invalid-feedback">
@@ -643,6 +644,94 @@ $(document).ready(function() {
 		</div>  <!-- card .// -->
 		<button class="my-4 btn btn-block btn-dark btn-outline-kana" data-toggle="modal" data-target="#loginModal">Checkout Now</button>
 		<!-- Order Summary No PPN -- END -->
+
+		<div class="modal fade" id="myVoucher" tabindex="-1" role="dialog" aria-labelledby="myVoucher" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<p>MY VOUCHER</p>
+					</div>
+					<div class="modal-body">
+						<div class="row container">
+							<div class="col-12 col-md-8 py-3 m-auto">
+								<div class="row">
+									<div class="voucher-card p-4 mb-3 container">
+										<div class="row justify-content-between">
+											<div class="col-6 col-md-5">
+												<div class="title">
+													Free Shipping
+												</div>
+												<div class="desc">
+													Minimum order Rp 1,000,000<br/>
+													Maximum discount Rp 100,000<br/>
+													Valid until 31 January 2021
+												</div>
+											</div>
+											<div class="col-6 col-md-4 text-center">
+												<p>Voucher code:</p>
+												<div class="code">
+													KANAFREE
+												</div>
+												<button class="btn btn-block btn-dark btn-outline-kana">Use Voucher</button>
+											</div>
+										</div>
+									</div>
+									<div class="voucher-card p-4 mb-3 container">
+										<div class="row justify-content-between">
+											<div class="col-6 col-md-5">
+												<div class="title">
+													Free Shipping
+												</div>
+												<div class="desc">
+													Minimum order Rp 1,000,000<br/>
+													Maximum discount Rp 100,000<br/>
+													Valid until 31 January 2021
+												</div>
+											</div>
+											<div class="col-6 col-md-4 text-center">
+												<p>Voucher code:</p>
+												<div class="code">
+													KANAFREE
+												</div>
+												<button class="btn btn-block btn-dark btn-outline-kana">Use Voucher</button>
+											</div>
+										</div>
+									</div>
+									<div class="voucher-card p-4 mb-3 container">
+										<div class="row justify-content-between">
+											<div class="col-6 col-md-5">
+												<div class="title">
+													Free Shipping
+												</div>
+												<div class="desc">
+													Minimum order Rp 1,000,000<br/>
+													Maximum discount Rp 100,000<br/>
+													Valid until 31 January 2021
+												</div>
+											</div>
+											<div class="col-6 col-md-4 text-center">
+												<p>Voucher code:</p>
+												<div class="code">
+													KANAFREE
+												</div>
+												<button class="btn btn-block btn-dark btn-outline-kana">Use Voucher</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="row container">
+							<div class="col-12 col-md-5 m-auto">
+								<button class="btn btn-block btn-dark btn-outline-kana" data-dismiss="modal" aria-label="Close">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Order Summary With PPN -- START -->
 		<div class="card order-summary">
