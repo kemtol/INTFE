@@ -1063,7 +1063,6 @@
 }
 
 .product-category .card-product-grid .img-wrap h3 {
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -1096,7 +1095,7 @@
 }
 
 .card-product-grid .promo-price, .product-card .promo-price {
-    font-weight: normal;
+    font-weight: 600;
     font-size: 14px;
     color: #EA6564;
     margin-top: 5px;
@@ -1194,7 +1193,7 @@
 
 .product-list .card-product-grid .color-option ul li, .color-option ul li, .product-card .color-option ul li {
     border-radius: 100%;
-    padding: 4px 5px;
+    padding: 4px;
     display: inline-block;
     cursor: pointer;
 }
