@@ -855,6 +855,10 @@
         border-bottom: 1px solid #c8c8c8;
         border-radius: 0 !important;
     }
+
+    #mainCarousel .control-custom {
+        left: 28%;
+    }
 }
 
 .header-main .search input::placeholder {
