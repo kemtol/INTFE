@@ -868,6 +868,21 @@
     height: 400px;
 }
 
+#mainCarousel .control-custom {
+    position: absolute;
+    bottom: 17px;
+    left: 44%;
+    z-index: 999;
+}
+
+#mainCarousel .control-custom .prev {
+    margin-right: 150px !important;
+}
+
+#mainCarousel .control-custom a {
+    color: white;
+}
+
 #mainCarousel .carousel-caption {
     left: 10%;
     top: 20%;
