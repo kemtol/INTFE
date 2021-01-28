@@ -16,6 +16,22 @@
     background: #2b2b2b;
 }
 
+.widget-header .non-login-header {
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-right: 12px;
+}
+
+.widget-header .non-login-header li {
+    padding: 0 8px;
+}
+
+.widget-header .non-login-header li a {
+    font-weight: 300;
+    font-size: 13px;
+    color: #474747;
+}
+
 .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .form-control:valid, .form-control.is-valid {
     background-image: none;
 }
@@ -2150,7 +2166,8 @@
     .shopping-cart-list .cart-item .delete-cart {
         bottom: 0;
         right: 0;
-        top: inherit;
+        top: 12px;
+        height: fit-content;
     }
 
     .shopping-cart-list .cart-item .input-spinner {

@@ -349,7 +349,8 @@ $(document).ready(function() {
 			</div> <!-- col.// -->
 			<div class="col-lg-2 col-xl-2 col-sm-8 col-md-4 col-4">
 				<div class="d-flex justify-content-end">
-					<div class="widget-header mr-4 d-none d-md-block account-dropdown">
+					<!-- LOGIN HEADER -->
+					<!-- <div class="widget-header mr-4 d-none d-md-block account-dropdown">
 						<div class="icon" id="accountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img src="images/user.png" />
 							<span class="sr-only">Profile actions</span>
@@ -363,7 +364,17 @@ $(document).ready(function() {
 								<a class="list-group-item" href="#"> Sign Out </a>
 							</ul>
 						</div>
-					</div>  <!-- widget-header .// -->
+					</div> -->
+					<!-- LOGIN HEADER -->
+					
+					<!-- NON LOGIN HEADER -->
+					<div class="widget-header d-none d-md-block">
+						<ul class="non-login-header">
+							<li class="d-inline-block"><a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log In</a></li>
+							<li class="d-inline-block"><a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Sign Up</a></li>
+						</ul>
+					</div>
+					<!-- NON LOGIN HEADER -->
 
 					<div class="widget-header mr-3 cart-dropdown">
 						<div class="icon" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
