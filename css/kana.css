@@ -2030,23 +2030,23 @@
     padding: 0;
 }
 
-#loginModal .modal-body h4, #registerModal .modal-body h4 {
+#loginModal .modal-body h4, #registerModal .modal-body h4, .auth-section h4 {
     font-size: 20px;
     color: #2b2b2b;
     font-weight: 300;
 }
 
-#loginModal .modal-body p, #registerModal .modal-body p, #loginModal .modal-body p a, #registerModal .modal-body p a {
+#loginModal .modal-body p, #registerModal .modal-body p, #loginModal .modal-body p a, #registerModal .modal-body p a, .auth-section p a, .auth-section p {
     font-size: 14px;
     color: #6a6a6a;
     font-weight: 300;
 }
 
-#loginModal .modal-body p a, #registerModal .modal-body p a {
+#loginModal .modal-body p a, #registerModal .modal-body p a, .auth-section p a {
     text-decoration: underline;
 }
 
-#loginModal .modal-body .text-separator, #registerModal .modal-body .text-separator {
+#loginModal .modal-body .text-separator, #registerModal .modal-body .text-separator, .auth-section .text-separator {
     font-size: 10px;
     color: #909090;
 }
