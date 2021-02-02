@@ -2022,11 +2022,11 @@
 
 /* Login Register Modal -- START */
 
-#loginModal, #registerModal, #loginModal .modal-content, #registerModal .modal-content {
+#loginModal, #registerModal, #loginModal .modal-content, #registerModal .modal-content, #promoModal .modal-content {
     border-radius: 0;
 }
 
-#loginModal .modal-body, #registerModal .modal-body {
+#loginModal .modal-body, #registerModal .modal-body, #promoModal .modal-body {
     padding: 0;
 }
 
@@ -2036,7 +2036,13 @@
     font-weight: 300;
 }
 
-#loginModal .modal-body p, #registerModal .modal-body p, #loginModal .modal-body p a, #registerModal .modal-body p a, .auth-section p a, .auth-section p {
+#promoModal h4 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #2b2b2b;
+}
+
+#loginModal .modal-body p, #registerModal .modal-body p, #loginModal .modal-body p a, #registerModal .modal-body p a, .auth-section p a, .auth-section p, #promoModal p {
     font-size: 14px;
     color: #6a6a6a;
     font-weight: 300;
