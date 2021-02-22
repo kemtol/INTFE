@@ -2420,7 +2420,7 @@
 
 @media only screen and (max-width: 719px) {
     .gallery-wrap .img-big-wrap {
-        height: 250px;
+        height: 95vw;
     }
 }
 
